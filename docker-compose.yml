@@ -1,13 +1,17 @@
 version: '2.0'
 services:
-  backend:
-    build: ./korp-backend
-    volumes:
-      - corpora:/corpora
   frontend:
     build: ./korp-frontend
     ports:
       - "9111:9111"
+  backend:
+    environment:
+      - PYTHONUNBUFFERED=1 # otherwise docker-compose up won't show logs from this service
+    build: ./korp-backend
+    volumes:
+      - corpora:/corpora
+    ports:
+      - "1234:1234"
 
 volumes:
   corpora:
