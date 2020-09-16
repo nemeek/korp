@@ -4,7 +4,7 @@ import subprocess
 from subprocess import PIPE
 import json
 import sys
-
+from pathlib import Path
 
 inspect_volume_args = ["sudo", "docker", "volume", "inspect", "korp-docker_corpora"]
 print(" ".join(inspect_volume_args))
