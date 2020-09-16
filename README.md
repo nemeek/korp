@@ -1,5 +1,5 @@
 
 
-- `sudo docker-compose up`
+- `docker-compose up`
 
 - `make decompress-toy-corpus`
