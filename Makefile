@@ -28,6 +28,6 @@ decompress-toy-corpus:
 # This command clears corpora and registry files inside the docker volume and create new ones from the
 # .vrt files (also inside volume)
 encode-wolfart-ahenakew:
-	./crk_WolfartAhenakew_encode.sh wolfart_ahenakew "Plains Cree: Wolfart-Ahenakew Texts" $(date +"%Y-%m-%d")
+	./crk_WolfartAhenakew_encode.sh wolfart_ahenakew "Plains Cree: Wolfart-Ahenakew Texts" $$(date +"%Y-%m-%d")
 
 .PHONY: debug-frontend debug-backend decompress-toy-corpus encode-wolfart-ahenakew rebuild-frontend rebuild-backend update-frontend-container update-backend-container
