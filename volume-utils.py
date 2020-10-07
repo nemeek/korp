@@ -6,7 +6,7 @@ import json
 import sys
 from pathlib import Path
 
-inspect_volume_args = ["docker", "volume", "inspect", "korp-docker_corpora"]
+inspect_volume_args = ["docker", "volume", "inspect", "korp_corpora"]
 print(" ".join(inspect_volume_args))
 p = subprocess.run(inspect_volume_args, check=True, encoding='utf-8', stdout=PIPE)
 docker_output = p.stdout
