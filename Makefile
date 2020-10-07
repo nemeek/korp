@@ -16,4 +16,10 @@ rebuild-backend:
 decompress-toy-corpus:
 	./volume-utils.py decompress
 
-.PHONY: debug-frontend debug-backend decompress-toy-corpus
+# cwb version change might require re-encoding of .vrt files in docker volume
+# This command clears corpora and registry files inside the docker volume and create new ones from the
+# .vrt files (also inside volume)
+encode-wolfart-ahenakew:
+	./crk_WolfartAhenakew_encode.sh wolfart_ahenakew "Plains Cree: Wolfart-Ahenakew Texts" $(date +"%Y-%m-%d")
+
+.PHONY: debug-frontend debug-backend decompress-toy-corpus encode-wolfart-ahenakew
