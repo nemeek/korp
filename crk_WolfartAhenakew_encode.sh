@@ -31,12 +31,13 @@ rm -fv $corpus_data/$l_corpus_name/*.rev
 rm -fv $corpus_data/$l_corpus_name/*.rdx
 if [ -f $registry/$l_corpus_name ];
 then
-   echo "File $registry/$l_corpus_name exists"
+   echo "Success! File $registry/$l_corpus_name is created!"
    name_placeholder='NAME ""' # Sets placeholder - don't edit
    name_string='NAME "'$descriptive_name'"'
    lang_placeholder='language = "??"' # Sets placeholder - don't edit
    lang_string='language = "'$lang_code'"'
    sed -i "s/${name_placeholder}/${name_string}/; s/${lang_placeholder}/${lang_string}/;" $registry/$l_corpus_name
 else
-   echo "File $registry/$l_corpus_name does not exists"
+   echo "Failed to create $registry/$l_corpus_name"
+   exit 1
 fi
