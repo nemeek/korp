@@ -1,3 +1,5 @@
+ARG GITCACHE=0
+
 # For korp-backend
 FROM python:3.6-slim-buster
 
@@ -12,6 +14,8 @@ RUN svn co http://svn.code.sf.net/p/cwb/code/cwb/trunk cwb && cd cwb && ./instal
 
 RUN mkdir -p /corpora/data && mkdir -p /corpora/registry
 
+
+ARG GITCACHE
 # clone korp-backend and create /app/korp-backend
 RUN git clone https://github.com/UAlbertaALTLab/korp-backend.git /app/korp-backend \
     && cd /app/korp-backend \
