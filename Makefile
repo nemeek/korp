@@ -13,6 +13,8 @@ rebuild-frontend:
 	sudo docker-compose build --build-arg GITCACHE=$$(date +%s) frontend
 rebuild-backend:
 	sudo docker-compose build --build-arg GITCACHE=$$(date +%s) backend
+rebuild-korp: rebuild-frontend rebuild-backend
+
 
 
 # use these after rebuild
