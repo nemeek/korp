@@ -12,7 +12,7 @@ input_data="/corpora"
 date=$(date +%Y-%m-%d)
 descriptive_name="Plains Cree: Wolfart-Ahenakew Texts"
 lang_code="crk"
-l_corpus_name="wa_annotated" # Short name (base name) of vrt corpus file
+l_corpus_name="wolfart_ahenakew" # Short name (base name) of vrt corpus file
 u_corpus_name=${l_corpus_name^^}
 mkdir -vp $corpus_data/$l_corpus_name
 sent_nr=$(cat $input_data/$l_corpus_name.vrt|grep '<sentence'|wc -l)
