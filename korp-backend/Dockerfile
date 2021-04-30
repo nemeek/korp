@@ -21,6 +21,13 @@ RUN git clone https://github.com/UAlbertaALTLab/korp-backend.git /app/korp-backe
     && cd /app/korp-backend \
     && pip3 install -r requirements.txt
 
+RUN apt-get install dos2unix
+
+RUN mkdir -p /corpora
+WORKDIR /corpora
+COPY wolfart_ahenakew.vrt crk_WolfartAhenakew_encode.sh .
+RUN dos2unix crk_WolfartAhenakew_encode.sh && bash /corpora/crk_WolfartAhenakew_encode.sh
+
 EXPOSE 1234
 
 WORKDIR /app/korp-backend/

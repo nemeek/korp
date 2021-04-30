@@ -1,31 +1,34 @@
 #!/bin/bash
-# ${string,,} toLower
-# ${string^^} toUpper
-# ${string,,[AEIUO]}
-# ${string^^[aeiou]}
-corpus_data="/var/snap/docker/common/var-lib-docker/volumes/korp_corpora/_data/corpora"
-registry="/var/snap/docker/common/var-lib-docker/volumes/korp_corpora/_data/registry"
-input_data="/var/snap/docker/common/var-lib-docker/volumes/korp_corpora/_data/WolfartAhenakew"
-date=$3 # "YYYY-MM-DD"
-descriptive_name=$2 # "Descriptive Name"
+
+set -eu
+set -xv
+
+CWB_PATH=$(ls -d /usr/local/cwb-*/bin) # something like /usr/local/cwb-3.4.32/bin
+PATH="${CWB_PATH}:${PATH}"
+
+corpus_data="/corpora/corpora"
+registry="/corpora/registry"
+input_data="/corpora"
+date=$(date +%Y-%m-%d)
+descriptive_name="Plains Cree: Wolfart-Ahenakew Texts"
 lang_code="crk"
-l_corpus_name=$1 # Short name of vrt corpus file
+l_corpus_name="wolfart_ahenakew" # Short name (base name) of vrt corpus file
 u_corpus_name=${l_corpus_name^^}
 mkdir -vp $corpus_data/$l_corpus_name
 sent_nr=$(cat $input_data/$l_corpus_name.vrt|grep '<sentence'|wc -l)
 cat > $corpus_data/$l_corpus_name/.info << EOF
 Sentences: $sent_nr
-Updated: $date 
+Updated: $date
 EOF
 echo " ....... created $corpus_data/$l_corpus_name/.info"
-/usr/local/bin/cwb-encode -s -p - -d $corpus_data/$l_corpus_name -R $registry/$l_corpus_name -c utf8 -f $input_data/$l_corpus_name.vrt -P word -P lemma -P msd -P dep -P gloss -S sentence:0+id -S paragraph -S text:0+id+lang+title+author -S corpus:0+id
+cwb-encode -s -p - -d $corpus_data/$l_corpus_name -R $registry/$l_corpus_name -c utf8 -f $input_data/$l_corpus_name.vrt -P word -P lemma -P msd -P dep -P gloss -S sentence:0+id -S paragraph -S text:0+id+lang+title+author -S corpus:0+id
 echo " ....... $l_corpus_name converted into the CWB binary format"
-/usr/local/bin/cwb-makeall -r $registry -D $u_corpus_name
+cwb-makeall -r $registry -D $u_corpus_name
 echo " ....... created lexicon and index for p-attributes for $l_corpus_name"
-/usr/local/bin/cwb-huffcode -r $registry -A $u_corpus_name
+cwb-huffcode -r $registry -A $u_corpus_name
 echo " ....... compressed the token sequence of positional attributes for $l_corpus_name"
 rm -fv $corpus_data/$l_corpus_name/*.corpus
-/usr/local/bin/cwb-compress-rdx -r $registry -A $u_corpus_name
+cwb-compress-rdx -r $registry -A $u_corpus_name
 echo " ....... compressed the index of positional attributes for $l_corpus_name"
 rm -fv $corpus_data/$l_corpus_name/*.rev
 rm -fv $corpus_data/$l_corpus_name/*.rdx
