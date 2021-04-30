@@ -4,9 +4,11 @@ services:
     build: ./korp-frontend
     ports:
       - "9111:9111"
+    restart: always
   backend:
     environment:
       - PYTHONUNBUFFERED=1 # otherwise docker-compose up won't show logs from this service
     build: ./korp-backend
     ports:
       - "1234:1234"
+    restart: always
