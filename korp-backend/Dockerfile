@@ -25,7 +25,7 @@ RUN apt-get install dos2unix
 
 RUN mkdir -p /corpora
 WORKDIR /corpora
-COPY wolfart_ahenakew.vrt crk_WolfartAhenakew_encode.sh .
+COPY wolfart_ahenakew.vrt crk_WolfartAhenakew_encode.sh ./
 RUN dos2unix crk_WolfartAhenakew_encode.sh && bash /corpora/crk_WolfartAhenakew_encode.sh
 
 EXPOSE 1234
