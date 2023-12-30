@@ -11,4 +11,4 @@ services:
     build: ./korp-backend
     ports:
       - "1234:1234"
-    restart: always
+    restart: on-failure

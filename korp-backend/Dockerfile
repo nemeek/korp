@@ -1,9 +1,10 @@
 ARG GITCACHE=0
 
 # For korp-backend
-FROM python:3.6-slim-buster
+#FROM python:3.6-slim-buster
+FROM python:3.11
 
-LABEL maintainer="szhao5@ualberta.ca"
+LABEL maintainer="neeme.kahusk@ut.ee"
 
 
 
@@ -17,8 +18,11 @@ RUN mkdir -p /corpora/data && mkdir -p /corpora/registry
 
 ARG GITCACHE
 # clone korp-backend and create /app/korp-backend
-RUN git clone https://github.com/UAlbertaALTLab/korp-backend.git /app/korp-backend \
-    && cd /app/korp-backend \
+RUN git clone https://github.com/nemeek/korp-backend.git /app/korp-backend \
+	&& cd /app/korp-backend
+WORKDIR /app/korp-backend
+RUN git fetch
+RUN git checkout gling \
     && pip3 install -r requirements.txt
 
 RUN apt-get install dos2unix
@@ -30,5 +34,8 @@ WORKDIR /corpora
 
 EXPOSE 1234
 
-WORKDIR /app/korp-backend/
-CMD python3 korp.py
+WORKDIR /app/korp-backend
+# CMD python3 korp.py
+CMD python3 run.py dev
+# CMD ls -l
+# ENTRYPOINT ["tail", "-f", "/dev/null"]
