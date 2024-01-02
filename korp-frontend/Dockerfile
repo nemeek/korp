@@ -11,7 +11,7 @@ RUN apk add git
 
 ARG GITCACHE
 # clone INTO /app/korp-frontend (This makes directory /app/ too)
-RUN git clone https://github.com/UAlbertaALTLab/korp-frontend.git /app/korp-frontend \
+RUN git clone https://github.com/Keeleressursid/alberta-korp-frontend.git /app/korp-frontend \
     && cd /app/korp-frontend \
     && yarn install \
     && yarn run build
