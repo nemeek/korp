@@ -32,6 +32,9 @@ WORKDIR /corpora
 # COPY wolfart_ahenakew.vrt crk_WolfartAhenakew_encode.sh ./
 # RUN dos2unix crk_WolfartAhenakew_encode.sh && bash /corpora/crk_WolfartAhenakew_encode.sh
 
+COPY underivask.vrt register-base-underivask-gt.sh ./
+RUN /corpora/register-base-underivask-gt.sh underivask.vrt
+
 EXPOSE 1234
 
 WORKDIR /app/korp-backend
