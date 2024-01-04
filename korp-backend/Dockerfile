@@ -11,31 +11,34 @@ LABEL maintainer="neeme.kahusk@ut.ee"
 RUN apt-get update && apt-get install subversion git default-libmysqlclient-dev -y
 
 # install cwb
-RUN svn co http://svn.code.sf.net/p/cwb/code/cwb/trunk cwb && cd cwb && ./install-scripts/install-linux
+# RUN svn co http://svn.code.sf.net/p/cwb/code/cwb/trunk cwb && cd cwb && ./install-scripts/install-linux
 
-RUN mkdir -p /corpora/data && mkdir -p /corpora/registry
+RUN mkdir src
+COPY cwb-3.5.0-src.tar /src
+
+# RUN mkdir -p /corpora/data && mkdir -p /corpora/registry
 
 
-ARG GITCACHE
-# clone korp-backend and create /app/korp-backend
-RUN git clone https://github.com/nemeek/korp-backend.git /app/korp-backend \
-	&& cd /app/korp-backend
-WORKDIR /app/korp-backend
-RUN git fetch
-RUN git checkout gling \
-    && pip3 install -r requirements.txt
+# ARG GITCACHE
+# # clone korp-backend and create /app/korp-backend
+# RUN git clone https://github.com/nemeek/korp-backend.git /app/korp-backend \
+# 	&& cd /app/korp-backend
+# WORKDIR /app/korp-backend
+# RUN git fetch
+# RUN git checkout gling \
+#     && pip3 install -r requirements.txt
 
-RUN apt-get install dos2unix
+# # RUN apt-get install dos2unix
 
-RUN mkdir -p /corpora
-WORKDIR /corpora
-# COPY wolfart_ahenakew.vrt crk_WolfartAhenakew_encode.sh ./
-# RUN dos2unix crk_WolfartAhenakew_encode.sh && bash /corpora/crk_WolfartAhenakew_encode.sh
+# RUN mkdir -p /corpora
+# WORKDIR /corpora
+# # COPY wolfart_ahenakew.vrt crk_WolfartAhenakew_encode.sh ./
+# # RUN dos2unix crk_WolfartAhenakew_encode.sh && bash /corpora/crk_WolfartAhenakew_encode.sh
 
-EXPOSE 1234
+# EXPOSE 1234
 
-WORKDIR /app/korp-backend
-# CMD python3 korp.py
-CMD python3 run.py dev
-# CMD ls -l
-# ENTRYPOINT ["tail", "-f", "/dev/null"]
+# WORKDIR /app/korp-backend
+# # CMD python3 korp.py
+# CMD python3 run.py dev
+# # CMD ls -l
+ENTRYPOINT ["tail", "-f", "/dev/null"]
