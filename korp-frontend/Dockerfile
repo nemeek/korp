@@ -13,9 +13,10 @@ ARG GITCACHE
 # clone INTO /app/korp-frontend (This makes directory /app/ too)
 RUN git clone https://github.com/Keeleressursid/alberta-korp-frontend.git /app/korp-frontend \
 	&& cd /app/korp-frontend \
-&& git checkout mac \
-    && yarn install \
-    && yarn run build
+&& git checkout mac
+RUN    yarn --ignore-platform install
+WORKDIR /app/korp-frontend/
+RUN yarn run build
 
 
 
