@@ -22,7 +22,7 @@ RUN git clone https://github.com/nemeek/korp-backend.git /app/korp-backend \
 	&& cd /app/korp-backend
 WORKDIR /app/korp-backend
 RUN git fetch
-RUN git checkout gling \
+RUN git checkout uusgling \
     && pip3 install -r requirements.txt
 
 RUN apt-get install dos2unix
