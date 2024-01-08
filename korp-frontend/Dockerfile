@@ -18,11 +18,11 @@ RUN git clone https://github.com/nemeek/korp-frontend.git /app/korp-frontend \
     && yarn
 
 WORKDIR /app/korp-frontend/
-# RUN yarn build
+RUN yarn build
 
 EXPOSE 9111
 
-CMD yarn start
+# CMD yarn start
 #	cd dist;
-# WORKDIR /app/korp-frontend/dist
-# CMD	python -m http.server 9111
+WORKDIR /app/korp-frontend/dist
+CMD	python -m http.server 9111
