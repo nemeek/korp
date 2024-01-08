@@ -15,7 +15,9 @@ ARG GITCACHE
 RUN git clone https://github.com/nemeek/korp-frontend.git /app/korp-frontend \
 	&& cd /app/korp-frontend \
 && git checkout master \
-    && yarn
+	&& yarn
+
+COPY config.yml /app/korp-frontend/app/.
 
 WORKDIR /app/korp-frontend/
 RUN yarn build
