@@ -23,6 +23,8 @@ languages:
     label: English
   - value: swe
     label: Svenska
+  - value: est
+    label: Eesti
 
 # group_statistics:
 #   - lemma
