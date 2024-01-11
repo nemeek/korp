@@ -139,3 +139,8 @@ common_struct_types:
     hide_statistics: 'true'
     opts: false
     extended_component: dateInterval
+
+word_label:
+  swe: ord
+  eng: word
+  est: sõna
