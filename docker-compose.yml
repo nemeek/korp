@@ -1,5 +1,14 @@
 version: '2.0'
 services:
+  db:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+    ports:
+      - '3307:3306'
+    expose:
+      - '3307'
   frontend:
     build: ./korp-frontend
     ports:
