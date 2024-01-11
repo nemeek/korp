@@ -128,13 +128,14 @@ map_center:
   lng: 16.69921875
   zoom: 4
 
-# common_struct_types:
-#   date_interval:
-#     label: 
-#       eng: time interval
-#       swe: tidsintervall
-#     hide_sidebar: 'true'
-#     hide_compare: 'true'
-#     hide_statistics: 'true'
-#     opts: false
-#     extended_component: dateInterval
+common_struct_types:
+  date_interval:
+    label: 
+      eng: time interval
+      swe: tidsintervall
+      est: ajaintervall
+    hide_sidebar: 'true'
+    hide_compare: 'true'
+    hide_statistics: 'true'
+    opts: false
+    extended_component: dateInterval
