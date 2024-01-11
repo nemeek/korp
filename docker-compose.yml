@@ -5,10 +5,15 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: korp
+      MYSQL_USER: korpikasutaja
+      MYSQL_PASSWORD: korpiparool
     ports:
       - '3307:3306'
     expose:
       - '3307'
+    volumes: 
+      - ./mysql:/docker-entrypoint-initdb.d      
   frontend:
     build: ./korp-frontend
     ports:
