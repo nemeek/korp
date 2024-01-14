@@ -17,8 +17,8 @@ RUN git clone https://github.com/spraakbanken/korp-frontend.git /app/korp-fronte
 	&& yarn
 
 COPY config.yml /app/korp-frontend/app/.
-# COPY corpora*json /app/korp-frontend/app/translations/
-# COPY locale*json /app/korp-frontend/app/translations/
+COPY corpora*json /app/korp-frontend/app/translations/
+COPY locale*json /app/korp-frontend/app/translations/
 # COPY settings.js /app/korp-frontend/app/scripts/.
 
 WORKDIR /app/korp-frontend/
