@@ -17,12 +17,14 @@ hits_per_page_values:
 enable_backend_kwic_download: false
 enable_frontend_kwic_download: true
 
-default_language: swe
+default_language: eng
 languages:
   - value: eng
     label: English
   - value: swe
     label: Svenska
+  - value: est
+    label: Eesti
 
 group_statistics:
   - saldo
@@ -137,6 +139,7 @@ common_struct_types:
     label: 
       eng: time interval
       swe: tidsintervall
+      est: ajaintervall
     hide_sidebar: 'true'
     hide_compare: 'true'
     hide_statistics: 'true'
