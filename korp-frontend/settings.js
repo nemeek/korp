@@ -23,7 +23,7 @@ export function setDefaultConfigValues() {
         },
         cqp_prio: ["deprel", "pos", "msd", "suffix", "prefix", "lemma", "lex", "word"],
         statistics_search_default: true,
-        word_label: { swe: "ord", eng: "word", est: "sõna" },
+        word_label: { swe: "ord", eng: "word", est: "sõna", },
         visible_modes: 6,
         has_timespan: true,
     }
