@@ -63,7 +63,6 @@
     "log_in": "Logi sisse",
     "username": "Email",
     "password": "Parool",
-    "login_fail_msg": "Authentication failed, please check your username and password and try again.",
     "login_fail_msg": "Kasutaja tuvastamine nurjus, palun kontrolli nime ja parooli ning proovi uuesti.",
     "forgot_password": "Parool ununenud?",
     "save_login": "Jäta mind meelde",
