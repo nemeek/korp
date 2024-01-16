@@ -18,7 +18,7 @@ ARG GITCACHE
 # clone korp-backend and create /app/korp-backend
 RUN git clone https://github.com/spraakbanken/korp-backend.git /app/korp-backend \
 	&& cd /app/korp-backend \
-	&& git checkout  master
+	# && git checkout  master
 COPY requirements.txt /app/korp-backend
 WORKDIR /app/korp-backend
 RUN pip3 install -r requirements.txt
@@ -29,4 +29,4 @@ WORKDIR /corpora
 EXPOSE 1234
 
 WORKDIR /app/korp-backend/
-CMD python3 korp.py
+CMD python3 run.py
