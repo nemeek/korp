@@ -31,8 +31,8 @@ WORKDIR /corpora
 COPY underivask.vrt semperbarbarus.vrt register-litterary.sh ./
 RUN /corpora/register-litterary.sh underivask.vrt
 RUN /corpora/register-litterary.sh semperbarbarus.vrt
-# COPY testcorpus.vrt register-test.sh ./
-# RUN /corpora/register-test.sh testcorpus.vrt
+COPY testcorpus.vrt register-test.sh ./
+RUN /corpora/register-test.sh testcorpus.vrt
 
 EXPOSE 1234
 
