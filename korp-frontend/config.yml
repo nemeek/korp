@@ -4,7 +4,7 @@ auth_module:
     default_value_remember: true
 
 
-autocomplete: true
+autocomplete: false
 map_enabled: false
 hits_per_page_values:
   - 25
@@ -26,16 +26,9 @@ languages:
   - value: est
     label: Eesti
 
-group_statistics:
-  - saldo
-  - prefix
-  - suffix
-  - lex
-  - lemma
-  - sense
-  - text_swefn
-  - text_blingbring
-  - e_cat
+# group_statistics:
+#   - lemma
+
 
 statistics_search_default: false
 
@@ -127,7 +120,8 @@ default_options:
   matches: '*='
   matches_not: '!*='
 
-korp_backend_url: 'https://ws.spraakbanken.gu.se/ws/korp/v8'
+# korp_backend_url: 'https://ws.spraakbanken.gu.se/ws/korp/v8'
+korp_backend_url: 'http://localhost:1234'
 
 map_center:
   lat: 62.99515845212052
@@ -145,3 +139,8 @@ common_struct_types:
     hide_statistics: 'true'
     opts: false
     extended_component: dateInterval
+
+word_label:
+  swe: ord
+  eng: word
+  est: sõna

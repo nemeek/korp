@@ -3,7 +3,7 @@ ARG GITCACHE=0
 # For korp-backend
 FROM  python:3.11
 
-LABEL maintainer="neeme.kahusk@ut.ee"
+LABEL maintainer="neeme.kahusk@gmail.com"
 
 
 RUN apt-get update && apt-get install subversion git default-libmysqlclient-dev -y
@@ -24,7 +24,14 @@ WORKDIR /app/korp-backend
 RUN pip3 install -r requirements.txt
 
 # RUN mkdir -p /corpora
+
 WORKDIR /corpora
+
+COPY underivask.vrt semperbarbarus.vrt register-litterary.sh ./
+RUN /corpora/register-litterary.sh underivask.vrt
+RUN /corpora/register-litterary.sh semperbarbarus.vrt
+# COPY testcorpus.vrt register-test.sh ./
+# RUN /corpora/register-test.sh testcorpus.vrt
 
 EXPOSE 1234
 
