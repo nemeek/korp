@@ -27,6 +27,16 @@ COPY config.py /app/korp-backend
 
 # RUN mkdir -p /corpora
 
+RUN mkdir -p /app/korp-backend/config/corpora
+RUN mkdir -p /app/korp-backend/config/modes
+RUN mkdir -p /app/korp-backend/config/attributes/positional
+RUN mkdir -p /app/korp-backend/config/attributes/structural
+
+COPY ./config/corpora /app/korp-backend/config/corpora/
+COPY ./config/modes /app/korp-backend/config/modes/
+COPY ./config/attributes/positional /app/korp-backend/config/attributes/positional
+COPY ./config/attributes/structural /app/korp-backend/config/attributes/structural
+
 WORKDIR /corpora
 
 COPY underivask.vrt semperbarbarus.vrt register-litterary.sh ./
