@@ -1,0 +1,19 @@
+dataset:
+  Aff: Aff
+  Neg: Neg
+escape: false
+extended_component: datasetSelect
+label:
+  eng: eitus
+  est: negation
+opts:
+  is: '='
+  is_not: '!='
+order: 0
+translation:
+  Aff:
+    eng: affirmative
+    est: jaatav kõne
+  Neg:
+    eng: negative
+    est: eitav kõne

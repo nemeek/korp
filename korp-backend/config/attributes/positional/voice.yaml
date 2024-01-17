@@ -1,0 +1,20 @@
+dataset:
+  Impers: Impers
+  Pers: Pers
+escape: false
+extended_component: datasetSelect
+label:
+  eng: voice
+  est: tegumood
+opts:
+  is: '='
+  is_not: '!='
+order: 0
+translation:
+  Pers:
+    eng: personal
+    est: isikuline
+  Impers:
+    eng: impersonal
+    est: umbisikuline
+    

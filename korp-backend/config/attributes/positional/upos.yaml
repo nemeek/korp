@@ -1,0 +1,8 @@
+label:
+  eng: universal part of speech
+  swe: universell ordklass
+type: set
+extended_component: structServiceSelect
+opts:
+  is: '='
+  is_not: '!='

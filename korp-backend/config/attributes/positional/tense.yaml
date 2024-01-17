@@ -1,0 +1,19 @@
+dataset:
+  Prs: Prs
+  Prt: Prt
+escape: false
+extended_component: datasetSelect
+label:
+  eng: tense
+  est: aeg
+opts:
+  is: '='
+  is_not: '!='
+order: 0
+translation:
+  Prs:
+    eng: present
+    est: olevik
+  Prt:
+    eng: past
+    est: minevik

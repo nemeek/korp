@@ -1,0 +1,22 @@
+dataset:
+  Sg: Sg
+  Pl: Pl
+escape: false
+extended_component: datasetSelect
+label:
+  eng: number
+  swe: number
+  est: arv
+opts:
+  is: '='
+  is_not: '!='
+order: 0
+translation:
+  Sg:
+    eng: singular
+    swe: singluar
+    est: ainsus
+  Pl:
+    eng: plural
+    swe: plural
+    est: mitmus

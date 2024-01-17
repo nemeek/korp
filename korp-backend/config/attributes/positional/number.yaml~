@@ -1,0 +1,100 @@
+dataset:
+  _A_: A
+  _B_: B
+  _C_: C
+  _D_: D
+  _G_: G
+  _H_: H
+  _I_: I
+  _J_: J
+  _K_: K
+  _N_: N
+  _O_: O
+  _P_: P
+  _Q_: Q
+  _S_: S
+  _U_: U
+  _V_: V
+  _X_: X
+  _Y_: Y
+  _Z_: Z
+
+escape: false
+extended_component: datasetSelect
+label:
+  eng: part-of-speech
+  swe: ordklass
+  est: sõnaliik
+opts:
+  is: '='
+  is_not: '!='
+order: 0
+translation:
+  A:
+    eng: adjective
+    swe: adjektiv
+    est: omadussõna algvõrre
+  B:
+    eng: sentence particle
+    swe: partikel
+    est: lausepartikkel
+  C:
+    eng: adjective comparative
+    swe: adjektiv
+    est: omadussõna keskvõrre
+  D:
+    eng: adverb
+    swe: adverb
+    est: määrsõna
+  G:
+    eng: genitive attribute
+    swe: genitive
+    est: genitiivatribuut
+  H:
+    eng: proper noun
+    swe: egennamn
+    est: pärisnimi
+  I:
+    eng: interjection
+    swe: interjektion
+    est: hüüdsõna
+  K:
+    eng: adposition
+    swe: adposition
+    est: kaassõna
+  N:
+    eng: cardinal number
+    swe: grundtal
+    est: põhiarvsõna
+  O:
+    eng: ordinal number
+    swe: ordningstal
+    est: järgarvsõna
+  P:
+    eng: pronoun
+    swe: pronomen
+    est: asesõna
+  Q:
+    eng: foreign word
+    swe: utländskt ord
+    est: tundmatu
+  S:
+    eng: noun
+    swe: substantiv
+    est: nimisõna
+  U:
+    eng: adjective superlative
+    swe: adjective
+    est: omadussõna ülivõrre
+  V:
+    eng: verb
+    swe: verb
+    est: tegusõna
+  X:
+    eng: particle
+    swe: partikel
+    est: verbi juurde kuuluv sõna
+  Z:
+    eng: punctuation
+    swe: interpunktion
+    est: kirjavahemärk

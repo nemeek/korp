@@ -1,0 +1,16 @@
+
+DELETE FROM `timedata` WHERE `corpus` = 'UNDERIVASK';
+DELETE FROM `timedata_date` WHERE `corpus` = 'UNDERIVASK';
+SET NAMES utf8;
+INSERT INTO `timedata` (corpus, datefrom, dateto, tokens) VALUES ('UNDERIVASK', '19571118000000', '19571118235959', 852);
+INSERT INTO `timedata_date` (corpus, datefrom, dateto, tokens) VALUES ('UNDERIVASK', '19571118', '19571118', 852);
+INSERT INTO `timedata` (corpus, datefrom, dateto, tokens) VALUES ('UNDERIVASK', '19571124000000', '19571124235959', 1976);
+INSERT INTO `timedata_date` (corpus, datefrom, dateto, tokens) VALUES ('UNDERIVASK', '19571124', '19571124', 1976);
+INSERT INTO `timedata` (corpus, datefrom, dateto, tokens) VALUES ('UNDERIVASK', '19571129000000', '19571129235959', 2650);
+INSERT INTO `timedata_date` (corpus, datefrom, dateto, tokens) VALUES ('UNDERIVASK', '19571129', '19571129', 2650);
+INSERT INTO `timedata` (corpus, datefrom, dateto, tokens) VALUES ('UNDERIVASK', '1957126000000', '1957126235959', 2957);
+INSERT INTO `timedata_date` (corpus, datefrom, dateto, tokens) VALUES ('UNDERIVASK', '1957126', '1957126', 2957);
+INSERT INTO `timedata` (corpus, datefrom, dateto, tokens) VALUES ('UNDERIVASK', '19571213000000', '19571213235959', 3481);
+INSERT INTO `timedata_date` (corpus, datefrom, dateto, tokens) VALUES ('UNDERIVASK', '19571213', '19571213', 3481);
+INSERT INTO `timedata` (corpus, datefrom, dateto, tokens) VALUES ('UNDERIVASK', '19571215000000', '19571215235959', 3749);
+INSERT INTO `timedata_date` (corpus, datefrom, dateto, tokens) VALUES ('UNDERIVASK', '19571215', '19571215', 3749);

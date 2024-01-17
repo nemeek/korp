@@ -1,0 +1,6 @@
+external_search: https://spraakbanken.gu.se/karp/#?mode=swefn&search=sense%7C%7Cswefn--<%= val %>
+internal_search: true
+label:
+  eng: Swedish FrameNet
+  swe: Svenskt FrasNät
+type: set

@@ -1,0 +1,27 @@
+dataset:
+  Sup: Sup
+  Inf: Inf
+  Ger: Ger
+  Prc: Prc
+escape: false
+extended_component: datasetSelect
+label:
+  eng: nominal
+  est: nominaal
+opts:
+  is: '='
+  is_not: '!='
+order: 0
+translation:
+  Sup:
+    eng: supine
+    est: ma-tegevusnimi
+  Inf:
+    eng: infinitive
+    est: da-tegevusnimi
+  Ger:
+    eng: gerund
+    est: des-vorm
+  Prc:
+    eng: participle
+    est: kesksõna
