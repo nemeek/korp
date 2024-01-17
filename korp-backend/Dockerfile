@@ -18,10 +18,11 @@ ARG GITCACHE
 # clone korp-backend and create /app/korp-backend
 RUN git clone https://github.com/spraakbanken/korp-backend.git /app/korp-backend \
 	&& cd /app/korp-backend \
-	# && git checkout  master
+#	 && git checkout  master
 COPY requirements.txt /app/korp-backend
 WORKDIR /app/korp-backend
 RUN pip3 install -r requirements.txt
+RUN pip3 install gunicorn
 COPY config.py /app/korp-backend
 
 # RUN mkdir -p /corpora
@@ -37,4 +38,5 @@ RUN /corpora/register-test.sh testcorpus.vrt
 EXPOSE 1234
 
 WORKDIR /app/korp-backend/
-CMD python3 run.py
+# CMD python3 run.py
+CMD gunicorn --worker-class gevent --bind 0.0.0.0:1234 --workers 4 --max-requests 250 --limit-request-line 0 'run:create_app()'

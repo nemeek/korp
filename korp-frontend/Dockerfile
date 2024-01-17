@@ -13,7 +13,7 @@ ARG GITCACHE
 
 RUN git clone https://github.com/spraakbanken/korp-frontend.git /app/korp-frontend \
 	&& cd /app/korp-frontend \
-&& git checkout dev \
+&& git checkout master \
 	&& yarn
 
 # COPY settings.js /app/korp-frontend/scripts/.
