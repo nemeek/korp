@@ -22,6 +22,7 @@ RUN git clone https://github.com/spraakbanken/korp-backend.git /app/korp-backend
 COPY requirements.txt /app/korp-backend
 WORKDIR /app/korp-backend
 RUN pip3 install -r requirements.txt
+COPY config.py /app/korp-backend
 
 # RUN mkdir -p /corpora
 
