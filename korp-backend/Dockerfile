@@ -1,7 +1,7 @@
 ARG GITCACHE=0
 
 # For korp-backend
-FROM  python:3.11
+FROM  python:3.8
 
 LABEL maintainer="neeme.kahusk@gmail.com"
 

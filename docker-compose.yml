@@ -8,8 +8,9 @@ services:
       MYSQL_DATABASE: korp
       MYSQL_USER: korpikasutaja
       MYSQL_PASSWORD: korpiparool
+      MYSQL_TCP_PORT: 3307
     ports:
-      - '3307:3306'
+      - '3307:3307'
     expose:
       - '3307'
     volumes: 
@@ -27,5 +28,6 @@ services:
     ports:
       - "1234:1234"
     restart: on-failure
+    network_mode: "host"
     # volumes: 
     #   - ./doker-backend/config:/app/korp-backend/config
