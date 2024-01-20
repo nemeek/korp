@@ -25,6 +25,15 @@ pos_attributes:
   - person: person
   - negation: negation
 
+struct_attributes:
+  - name_type: type
+  - text_sender: sender
+  - text_recipient: recipient
+  - text_place: place
+  - text_year: year
+  - text_date: date
+    
+
 title:
   swe: 'Under-Ivask'
   eng: 'Under-Ivask'

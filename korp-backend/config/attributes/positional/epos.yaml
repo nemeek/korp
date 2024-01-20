@@ -1,23 +1,23 @@
 dataset:
-  _A_: A
-  _B_: B
-  _C_: C
-  _D_: D
-  _G_: G
-  _H_: H
-  _I_: I
-  _J_: J
-  _K_: K
-  _N_: N
-  _O_: O
-  _P_: P
-  _Q_: Q
-  _S_: S
-  _U_: U
-  _V_: V
-  _X_: X
-  _Y_: Y
-  _Z_: Z
+  _A_: _A_
+  _B_: _B_
+  _C_: _C_
+  _D_: _D_
+  _G_: _G_
+  _H_: _H_
+  _I_: _I_
+  _J_: _J_
+  _K_: _K_
+  _N_: _N_
+  _O_: _O_
+  _P_: _P_
+  _Q_: _Q_
+  _S_: _S_
+  _U_: _U_
+  _V_: _V_
+  _X_: _X_
+  _Y_: _Y_
+  _Z_: _Z_
 
 escape: false
 extended_component: datasetSelect
@@ -58,6 +58,10 @@ translation:
     eng: interjection
     swe: interjektion
     est: hüüdsõna
+  _J_:
+    eng: conjunction
+    swe: konjunktion
+    est: sidesõna
   _K_:
     eng: adposition
     swe: adposition
