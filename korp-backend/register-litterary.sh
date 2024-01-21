@@ -26,9 +26,7 @@ mkdir /corpora/data/$FN
 
 # 1. Convert vrt to cwb format
 #/usr/local/$CWBVERSION/bin/cwb-encode -s -p - -d /corpora/data/$FN -R /corpora/registry/$FN -c utf8 -f /corpora/$FILENAME -P word -P baseform -P analysis -P pos -P number -P cases -P voice -P tense -P nominal -P mood -P person -P negation -S sentence:0+n -S para:0+n -S text:0+author+date
-$CWBENCODE -s -p - -d /corpora/data/$FN -R /corpora/registry/$FN -c utf8 -f /corpora/$FILENAME -P word -P baseform -P analysis -P pos -P number -P cases -P voice -P tense -P nominal -P mood -P person -P negation -S sentence:0+n -S paragraph:0+n -S text:0+sender+recipient+number+date+origdate+place+category+notes+year+datefrom+dateto+timefrom+timeto
-
-# -S name:0+type
+$CWBENCODE -s -p - -d /corpora/data/$FN -R /corpora/registry/$FN -c utf8 -f /corpora/$FILENAME -P word -P baseform -P analysis -P pos -P number -P cases -P voice -P tense -P nominal -P mood -P person -P negation -S sentence:0+n -S paragraph:0+n -S text:0+sender+recipient+number+date+origdate+place+category+notes+year+datefrom+dateto+timefrom+timeto -S name:0+type
 
 #/usr/local/$CWBVERSION/bin/cwb-encode -s -p - -d /corpora/data/$FN -R /corpora/registry/$FN -c utf8 -f /corpora/$FILENAME -P word -P baseform -P pos -P number -P cases -P voice -P tense -P nominal -P mood -P person -P negation -S sentence:0+n -S paragraph:0+n -S text:0+sender+recipient+number+date+origdate+place+category+notes+year+datefrom+dateto+timefrom+timeto -S name:0+type
 
