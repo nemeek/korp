@@ -29,7 +29,7 @@ PARALLEL_THREADS = 3
 
 # Database host and port
 # DBHOST = "0.0.0.0"
-DBHOST = "127.0.0.1"
+DBHOST = "db"
 DBPORT = 3307
 
 # Database name
