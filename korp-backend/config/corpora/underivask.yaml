@@ -32,6 +32,7 @@ struct_attributes:
   - text_place: place
   - text_year: year
   - text_date: date
+  - date_when: date
     
 
 title:
