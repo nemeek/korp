@@ -39,11 +39,12 @@ COPY ./config/attributes/structural /app/korp-backend/config/attributes/structur
 
 WORKDIR /corpora
 
-COPY underivask.vrt semperbarbarus.vrt register-litterary.sh ./
-RUN /corpora/register-litterary.sh underivask.vrt
+COPY underivask.vrt semperbarbarus.vrt older_fiction.vrt register-litterary.sh register-under.sh register-fiction.sh ./
+RUN /corpora/register-under.sh underivask.vrt
 RUN /corpora/register-litterary.sh semperbarbarus.vrt
-COPY testcorpus.vrt register-test.sh ./
-RUN /corpora/register-test.sh testcorpus.vrt
+RUN /corpora/register-fiction.sh older_fiction.vrt
+# COPY testcorpus.vrt register-test.sh ./
+# RUN /corpora/register-test.sh testcorpus.vrt
 
 EXPOSE 1234
 
