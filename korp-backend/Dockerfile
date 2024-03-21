@@ -47,7 +47,7 @@ WORKDIR /corpora
 
 RUN chmod +x register-under.sh
 
-ENTRYPOINT /bin/sh
+ENTRYPOINT
 
 # RUN pwd
 # RUN ls -l
