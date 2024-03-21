@@ -16,7 +16,7 @@ RUN mkdir -p /corpora/data && mkdir -p /corpora/registry
 
 ARG GITCACHE
 # clone korp-backend and create /app/korp-backend
-RUN git clone https://github.com/spraakbanken/korp-backend.git /app/korp-backend \
+RUN git clone https://github.com/nemeek/korp-backend.git /app/korp-backend \
 	&& cd /app/korp-backend \
 #	 && git checkout  master
 COPY requirements.txt /app/korp-backend
