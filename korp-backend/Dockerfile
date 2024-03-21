@@ -47,25 +47,27 @@ WORKDIR /corpora
 
 RUN chmod +x register-under.sh
 
-RUN pwd
-RUN ls -l
+ENTRYPOINT /bin/sh
 
-RUN ./register-under.sh underivask.vrt
-RUN register-litterary.sh semperbarbarus.vrt
-RUN register-fiction.sh older_fiction.vrt
+# RUN pwd
+# RUN ls -l
 
-RUN for i in veeb*vrt ; do /corpora/register-veeb23.sh $i ; done
+# RUN ./register-under.sh underivask.vrt
+# RUN register-litterary.sh semperbarbarus.vrt
+# RUN register-fiction.sh older_fiction.vrt
 
-# RUN /corpora/register-fiction.sh veeb2023_2014.vrt
-# RUN /corpora/register-fiction.sh veeb2023_pre2014.vrt
-# RUN /corpora/register-fiction.sh veeb2023_2015.vrt
-# RUN /corpora/register-fiction.sh veeb2023_2016.vrt
+# RUN for i in veeb*vrt ; do /corpora/register-veeb23.sh $i ; done
 
-# COPY testcorpus.vrt register-test.sh ./
-# RUN /corpora/register-test.sh testcorpus.vrt
+# # RUN /corpora/register-fiction.sh veeb2023_2014.vrt
+# # RUN /corpora/register-fiction.sh veeb2023_pre2014.vrt
+# # RUN /corpora/register-fiction.sh veeb2023_2015.vrt
+# # RUN /corpora/register-fiction.sh veeb2023_2016.vrt
 
-EXPOSE 1234
+# # COPY testcorpus.vrt register-test.sh ./
+# # RUN /corpora/register-test.sh testcorpus.vrt
 
-WORKDIR /app/korp-backend/
-# CMD python3 run.py
-CMD gunicorn --worker-class gevent --bind 0.0.0.0:1234 --workers 4 --max-requests 250 --limit-request-line 0 'run:create_app()'
+# EXPOSE 1234
+
+# WORKDIR /app/korp-backend/
+# # CMD python3 run.py
+# CMD gunicorn --worker-class gevent --bind 0.0.0.0:1234 --workers 4 --max-requests 250 --limit-request-line 0 'run:create_app()'
