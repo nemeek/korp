@@ -74,4 +74,4 @@ RUN chmod +x register-under.sh
 
 # ENTRYPOINT ["tail", "-f", "/dev/null"]
 # CMD "tail -f /dev/null"
-CMD["sleep", "infinity"]
+CMD ["sleep", "infinity"]
