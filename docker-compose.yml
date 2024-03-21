@@ -46,4 +46,4 @@ networks:
     driver: bridge
 
 volumes:
-  - /srv/vert:
+  - /srv/vert
