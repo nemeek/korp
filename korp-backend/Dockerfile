@@ -41,7 +41,7 @@ WORKDIR /corpora
 
 # COPY underivask.vrt semperbarbarus.vrt older_fiction.vrt register-litterary.sh register-under.sh register-fiction.sh veeb2023_*2014.vrt veeb2023_201[456].vrt ./
 
-COPY register*sh ./corpora
+COPY register*sh /corpora
 
 RUN chmod +x /corpora/register-under.sh
 RUN /corpora/register-under.sh underivask.vrt
