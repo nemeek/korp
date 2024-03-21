@@ -46,7 +46,7 @@ COPY register*sh /corpora
 WORKDIR /corpora
 
 RUN chmod +x register-under.sh
-RUN register-under.sh underivask.vrt
+RUN ./register-under.sh underivask.vrt
 RUN register-litterary.sh semperbarbarus.vrt
 RUN register-fiction.sh older_fiction.vrt
 
