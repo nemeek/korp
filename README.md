@@ -1,4 +1,12 @@
+
+## prod branch
+
+* Cleared unnecesary things
+* Repository at nemeek
+
 ## Setting up a new server
+
+
 
 This is what was done on `itw.altlab.dev`:
 
