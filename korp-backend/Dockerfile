@@ -68,6 +68,6 @@ ENTRYPOINT
 
 # EXPOSE 1234
 
-# WORKDIR /app/korp-backend/
-# # CMD python3 run.py
+WORKDIR /app/korp-backend/
+CMD python3 run.py
 CMD gunicorn --worker-class gevent --bind 0.0.0.0:1234 --workers 4 --max-requests 250 --limit-request-line 0 'run:create_app()'
