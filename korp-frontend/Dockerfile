@@ -16,11 +16,7 @@ RUN git clone https://github.com/nemeek/korp-frontend.git /app/korp-frontend \
 && git checkout master \
 	&& yarn
 
-# COPY settings.js /app/korp-frontend/scripts/.
 COPY config.yml /app/korp-frontend/app/.
-#COPY corpora*json /app/korp-frontend/app/translations/
-#COPY locale*json /app/korp-frontend/app/translations/
-# COPY settings.js /app/korp-frontend/app/scripts/.
 
 WORKDIR /app/korp-frontend/
 RUN yarn build

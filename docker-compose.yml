@@ -1,17 +1,5 @@
 version: '3'
 services:
-  nginx:
-    image: nginx:latest
-    # container_name: nginx-proxy
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
-      # - ./certs:/etc/nginx/certs
-    network_mode: "host"
-    # networks:
-      # - korp
   db:
     image: mysql
     restart: always
@@ -21,12 +9,10 @@ services:
       MYSQL_USER: korpikasutaja
       MYSQL_PASSWORD: korpiparool
       MYSQL_TCP_PORT: 3307
-    ports:
-      - '3307:3307'
     expose:
       - '3307'
     volumes: 
-      - ./mysql:/docker-entrypoint-initdb.d
+      - /srv/mysql:/docker-entrypoint-initdb.d
     networks:
       - korp
 
@@ -45,6 +31,8 @@ services:
     ports:
       - "1234:1234"
     restart: on-failure
+    volumes:
+      - /srv/vert:/corpora
     networks:
       - korp
     # network_mode: "host"
