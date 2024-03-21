@@ -44,9 +44,9 @@ WORKDIR /corpora
 COPY register*sh /corpora
 
 RUN chmod +x /corpora/register-under.sh
-RUN /corpora/register-under.sh underivask.vrt
-RUN /corpora/register-litterary.sh semperbarbarus.vrt
-RUN /corpora/register-fiction.sh older_fiction.vrt
+RUN register-under.sh underivask.vrt
+RUN register-litterary.sh semperbarbarus.vrt
+RUN register-fiction.sh older_fiction.vrt
 
 RUN for i in veeb*vrt ; do /corpora/register-veeb23.sh $i ; done
 
