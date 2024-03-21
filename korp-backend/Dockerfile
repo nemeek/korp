@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install subversion git default-libmysqlclient-dev 
 # install cwb
 RUN svn co http://svn.code.sf.net/p/cwb/code/cwb/trunk cwb && cd cwb && ./install-scripts/install-linux
 
-RUN mkdir -p /corpora/data && mkdir -p /corpora/registry
+# RUN mkdir -p /corpora/data && mkdir -p /corpora/registry
 
 
 ARG GITCACHE
