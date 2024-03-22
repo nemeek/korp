@@ -47,6 +47,7 @@ networks:
 
 volumes:
   corpora:
+    external: true
     driver: local
     driver_opts:
       type: none
