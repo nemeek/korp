@@ -37,13 +37,13 @@ COPY ./config/modes /app/korp-backend/config/modes/
 COPY ./config/attributes/positional /app/korp-backend/config/attributes/positional
 COPY ./config/attributes/structural /app/korp-backend/config/attributes/structural
 
-WORKDIR /corpora
+# WORKDIR /corpora
 
 # COPY underivask.vrt semperbarbarus.vrt older_fiction.vrt register-litterary.sh register-under.sh register-fiction.sh veeb2023_*2014.vrt veeb2023_201[456].vrt ./
 
-COPY register*sh /corpora
+# COPY register*sh /corpora
 
-WORKDIR /corpora
+# WORKDIR /corpora
 
 # RUN chmod +x register-under.sh
 
@@ -69,5 +69,5 @@ WORKDIR /corpora
 EXPOSE 1234
 
 WORKDIR /app/korp-backend/
-# CMD python3 run.py
-CMD gunicorn --worker-class gevent --bind 0.0.0.0:1234 --workers 4 --max-requests 250 --limit-request-line 0 'run:create_app()'
+CMD python3 run.py
+# CMD gunicorn --worker-class gevent --bind 0.0.0.0:1234 --workers 4 --max-requests 250 --limit-request-line 0 'run:create_app()'
