@@ -20,7 +20,7 @@ COPY config.yml /app/korp-frontend/app/.
 COPY index.html /app/korp-frontend/app/.
 
 WORKDIR /app/korp-frontend/
-RUN yarn build
+# RUN yarn build
 
 EXPOSE 9111
 
