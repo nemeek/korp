@@ -20,10 +20,11 @@ COPY config.yml /app/korp-frontend/app/.
 COPY index.html /app/korp-frontend/app/.
 
 WORKDIR /app/korp-frontend/
-# RUN yarn build
+RUN yarn build
 
 EXPOSE 9111
 
-# WORKDIR /app/korp-frontend/dist
-WORKDIR /app/korp-frontend/app
-CMD	python -m http.server 9111
+WORKDIR /app/korp-frontend/dist
+# WORKDIR /app/korp-frontend/app
+# CMD	python -m http.server 9111
+CMD yarn start:dist
