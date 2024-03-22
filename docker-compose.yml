@@ -32,7 +32,7 @@ services:
       - "1234:1234"
     restart: on-failure
     volumes:
-      - /srv/vert:/corpora
+      - corpora:/corpora
     networks:
       - korp
     # network_mode: "host"
@@ -46,6 +46,9 @@ networks:
     driver: bridge
 
 volumes:
-  /srv/vert
-  external: true
-
+  corpora:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: "/srv/vert"
