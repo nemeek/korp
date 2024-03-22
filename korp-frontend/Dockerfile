@@ -25,7 +25,7 @@ RUN yarn build
 EXPOSE 9111
 
 WORKDIR /app/korp-frontend/dist
-COPY index.html /app/korp-frontend/dist/.
+# COPY index.html /app/korp-frontend/dist/.
 # WORKDIR /app/korp-frontend/app
 CMD	python -m http.server 9111
 # CMD yarn start:dist
