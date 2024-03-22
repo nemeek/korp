@@ -17,7 +17,7 @@ hits_per_page_values:
 enable_backend_kwic_download: false
 enable_frontend_kwic_download: true
 
-default_language: eng
+default_language: est
 languages:
   - value: eng
     label: English
