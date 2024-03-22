@@ -1,6 +1,6 @@
 ARG GITCACHE=0
 
-FROM node:current-alpine
+FROM node:lts-alpine
 
 LABEL maintainer="neeme.kahusk@gmail.com"
 
