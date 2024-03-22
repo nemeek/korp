@@ -23,7 +23,7 @@ COPY requirements.txt /app/korp-backend
 WORKDIR /app/korp-backend
 RUN pip3 install -r requirements.txt
 RUN pip3 install gunicorn
-COPY config.py /app/korp-backend
+COPY config.py /app/korp-backend/instance
 
 # RUN mkdir -p /corpora
 
