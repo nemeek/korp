@@ -17,6 +17,7 @@ RUN git clone https://github.com/nemeek/korp-frontend.git /app/korp-frontend \
 
 
 COPY config.yml /app/korp-frontend/app/.
+COPY index.html /app/korp-frontend/app/.
 
 WORKDIR /app/korp-frontend/
 RUN yarn build
