@@ -50,5 +50,5 @@ volumes:
     driver: local
     driver_opts:
       type: none
-      o: bind
+      o: mount
       device: "/srv/vert"
