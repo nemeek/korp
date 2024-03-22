@@ -1,0 +1,41 @@
+context:
+  - label:
+      eng: 1 paragraph
+      swe: 1 paragraph
+      est: 1 lõik
+    value: 1 paragraph
+description:
+  swe: Webb 2016
+  eng: Web 2016
+  est: Veebikorpus 2023 (2016)
+id: veeb2023_2016
+mode:
+  - folder: veeb
+    name: default
+    
+
+
+pos_attributes:
+  - baseform: lemma
+  - pos: epos
+  - msd: msd
+
+struct_attributes:
+  - paragraph_heading: heading
+  - doc_feed_title: title
+  - doc_timestamp_year: year
+  - doc_date: date
+  - doc_url: url
+
+    
+
+title:
+  swe: 'Webb 23 (2016)'
+  eng: 'Web 23 (2016)'
+  est: 'Veeb 2023 (2016)'
+within:
+  - label:
+      eng: sentence
+      swe: mening
+      est: lause
+    value: sentence
