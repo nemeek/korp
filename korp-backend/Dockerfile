@@ -45,7 +45,7 @@ COPY register*sh /corpora
 
 WORKDIR /corpora
 
-RUN chmod +x register-under.sh
+# RUN chmod +x register-under.sh
 
 # ENTRYPOINT
 
@@ -66,12 +66,8 @@ RUN chmod +x register-under.sh
 # # COPY testcorpus.vrt register-test.sh ./
 # # RUN /corpora/register-test.sh testcorpus.vrt
 
-# EXPOSE 1234
+EXPOSE 1234
 
-#WORKDIR /app/korp-backend/
-#CMD python3 run.py
-#CMD gunicorn --worker-class gevent --bind 0.0.0.0:1234 --workers 4 --max-requests 250 --limit-request-line 0 'run:create_app()'
-
-# ENTRYPOINT ["tail", "-f", "/dev/null"]
-# CMD "tail -f /dev/null"
-CMD ["sleep", "infinity"]
+WORKDIR /app/korp-backend/
+CMD python3 run.py
+CMD gunicorn --worker-class gevent --bind 0.0.0.0:1234 --workers 4 --max-requests 250 --limit-request-line 0 'run:create_app()'
