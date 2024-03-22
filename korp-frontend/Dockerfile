@@ -1,7 +1,7 @@
 ARG GITCACHE=0
 
 #FROM node:lts-alpine
-FROM node:21.7.1-alpine3.19
+FROM node:21-alpine
 LABEL maintainer="neeme.kahusk@gmail.com"
 
 
