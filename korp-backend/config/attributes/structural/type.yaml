@@ -1,7 +1,7 @@
 dataset:
-  person: person
-  org: organization
-  place: place
+  B-PER: B-PER
+  B-LOC: B-LOC
+  B-ORG: B-ORG
   
 
 is_struct_attr: true
@@ -9,3 +9,16 @@ label:
   eng: type
   swe: typ
   est: tüüp
+
+translations:
+  B-PER:
+    est: isik
+    eng: person
+
+  B-LOC:
+    est: koht
+    eng: place
+
+  B-ORG:
+    est: asutus
+    eng: organization
