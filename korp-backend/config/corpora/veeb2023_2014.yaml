@@ -21,18 +21,19 @@ pos_attributes:
   - msd: msd
 
 struct_attributes:
-  - paragraph_heading: heading
+  - paragraph_heading: style
   - doc_feed_title: title
   - doc_timestamp_year: year
   - doc_date: date
   - doc_url: url
-
-    
+  - doc_genre: genre
+  - doc_topic: topic
 
 title:
   swe: 'Webb 23 (2014)'
   eng: 'Web 23 (2014)'
   est: 'Veeb 2023 (2014)'
+
 within:
   - label:
       eng: sentence
