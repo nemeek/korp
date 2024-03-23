@@ -39,15 +39,15 @@ COPY ./config/attributes/structural /app/korp-backend/config/attributes/structur
 
 WORKDIR /corpora
 
-COPY underivask.vrt semperbarbarus.vrt older_fiction.vrt register-litterary.sh register-under.sh register-fiction.sh veeb2023_*2014.vrt veeb2023_201[456].vrt ./
+COPY underivask.vrt semperbarbarus.vrt older_fiction.vrt register-litterary.sh register-under.sh register-fiction.sh register-veeb23.sh veeb2023_*2014.vrt veeb2023_201[456].vrt ./
 RUN /corpora/register-under.sh underivask.vrt
 RUN /corpora/register-litterary.sh semperbarbarus.vrt
 RUN /corpora/register-fiction.sh older_fiction.vrt
 
-RUN /corpora/register-fiction.sh veeb2023_2014.vrt
-RUN /corpora/register-fiction.sh veeb2023_pre2014.vrt
-RUN /corpora/register-fiction.sh veeb2023_2015.vrt
-RUN /corpora/register-fiction.sh veeb2023_2016.vrt
+RUN /corpora/register-veeb23.sh veeb2023_2014.vrt
+RUN /corpora/register-veeb23.sh veeb2023_pre2014.vrt
+RUN /corpora/register-veeb23.sh veeb2023_2015.vrt
+RUN /corpora/register-veeb23.sh veeb2023_2016.vrt
 
 # COPY testcorpus.vrt register-test.sh ./
 # RUN /corpora/register-test.sh testcorpus.vrt
