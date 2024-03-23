@@ -26,8 +26,8 @@ struct_attributes:
     
 
 title:
-  swe: 'Web 23'
-  eng: 'Web 23'
+  swe: 'Skönlitteratur'
+  eng: 'Fiction'
   est: 'Vanem ilukirjandus'
 within:
   - label:
