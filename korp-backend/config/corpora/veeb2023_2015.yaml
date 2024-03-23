@@ -24,7 +24,7 @@ struct_attributes:
 #  - doc_feed_title: title
   - doc_timestamp_year: year
   - doc_date: date
-  - doc_url: url
+#  - doc_url: url
 
     
 
