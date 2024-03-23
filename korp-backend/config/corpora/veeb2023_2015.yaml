@@ -20,8 +20,8 @@ pos_attributes:
   - msd: msd
 
 struct_attributes:
-  - paragraph_heading: heading
-  - doc_feed_title: title
+#  - paragraph_heading: heading
+#  - doc_feed_title: title
   - doc_timestamp_year: year
   - doc_date: date
   - doc_url: url
