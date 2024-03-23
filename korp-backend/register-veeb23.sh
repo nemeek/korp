@@ -26,7 +26,9 @@ mkdir /corpora/data/$FN
 
 # 1. Convert vrt to cwb format
 
-$CWBENCODE -s -p - -d /corpora/data/$FN -R /corpora/registry/$FN -c utf8 -f /corpora/$FILENAME -P word -P baseform -P pos -P msd  -S sentence:0+n -S paragraph:0+n -S doc:0+sender+recipient+number+date+origdate+place+category+notes+year+datefrom+dateto+timefrom+timeto
+$CWBENCODE -s -p - -d /corpora/data/$FN -R /corpora/registry/$FN -c utf8 -f /corpora/$FILENAME -P word -P baseform -P pos -P msd \
+	   -S sentence:0+n -S paragraph:0+n+heading \
+	   -S doc:0+feed_hostname+feed_title+url+timestamp_year+date+datefrom+dateto+timefrom+timeto+genre+topic+title
 
 
 # 2. Register corpus
