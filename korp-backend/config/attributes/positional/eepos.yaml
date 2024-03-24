@@ -19,7 +19,7 @@ dataset:
   "Y": "Y"
   "Z": "Z"
 
-escape: false
+escape: true
 extendedcomponent: datasetSelect
 label:
   eng: part-of-speech
