@@ -23,7 +23,7 @@ pos_attributes:
 
 struct_attributes:
   - paragraph_heading: style
-  - doc_feed_title: title
+#  - doc_feed_title: title
   - doc_timestamp_year: year
   - doc_date: date
   - doc_url: url
