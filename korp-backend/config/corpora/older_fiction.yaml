@@ -15,7 +15,7 @@ mode:
 
 pos_attributes:
   - baseform: lemma
-  - pos: epos
+  - pos: eepos
   - msd: msd
 
 struct_attributes:
