@@ -6,11 +6,11 @@ context:
     value: 1 paragraph
 
 description:
-  swe: Webb pre2014
-  eng: Web pre2014
-  est: Veeb pre2014
+  swe: Webb 2020
+  eng: Web 2020
+  est: Veeb 2020
 
-id: veeb2023_pre2014
+id: veeb2023_2020
 
 mode:
   - folder: veeb
@@ -32,9 +32,9 @@ struct_attributes:
   - doc_topic: topic
 
 title:
-  swe: 'Webb 23 (pre2014)'
-  eng: 'Web 23 (pre2014)'
-  est: 'Veeb 2023 (pre2014)'
+  swe: 'Webb 23 (2020)'
+  eng: 'Web 23 (2020)'
+  est: 'Veeb 2023 (2020)'
 
 within:
   - label:
