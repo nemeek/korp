@@ -1,23 +1,23 @@
 dataset:
-  A: A
-  B: B
-  C: C
-  D: D
-  G: G
-  H: H
-  I: I
-  J: J
-  K: K
-  N: N
-  O: O
-  P: P
-  Q: Q
-  S: S
-  U: U
-  V: V
-  X: X
-  Y: Y
-  Z: Z
+  "A": "A"
+  "B": "B"
+  "C": "C"
+  "D": "D"
+  "G": "G"
+  "H": "H"
+  "I": "I"
+  "J": "J"
+  "K": "K"
+  "N": "N"
+  "O": "O"
+  "P": "P"
+  "Q": "Q"
+  "S": "S"
+  "U": "U"
+  "V": "V"
+  "X": "X"
+  "Y": "Y"
+  "Z": "Z"
 
 escape: false
 extendedcomponent: datasetSelect
@@ -30,79 +30,79 @@ opts:
   isnot: '!='
 order: 0
 translation:
-  A:
+  "A":
     eng: adjective
     swe: adjektiv
     est: omadussõna algvõrre
-  B:
+  "B":
     eng: sentence particle
     swe: partikel
     est: lausepartikkel
-  C:
+  "C":
     eng: adjective comparative
     swe: adjektiv
     est: omadussõna keskvõrre
-  D:
+  "D":
     eng: adverb
     swe: adverb
     est: määrsõna
-  G:
+  "G":
     eng: genitive attribute
     swe: genitive
     est: genitiivatribuut
-  H:
+  "H":
     eng: proper noun
     swe: egennamn
     est: pärisnimi
-  I:
+  "I":
     eng: interjection
     swe: interjektion
     est: hüüdsõna
-  J:
+  "J":
     eng: conjunction
     swe: konjunktion
     est: sidesõna
-  K:
+  "K":
     eng: adposition
     swe: adposition
     est: kaassõna
-  N:
+  "N":
     eng: cardinal number
     swe: grundtal
     est: põhiarvsõna
-  O:
+  "O":
     eng: ordinal number
     swe: ordningstal
     est: järgarvsõna
-  P:
+  "P":
     eng: pronoun
     swe: pronomen
     est: asesõna
-  Q:
+  "Q":
     eng: foreign word
     swe: utländskt ord
     est: tundmatu
-  S:
+  "S":
     eng: noun
     swe: substantiv
     est: nimisõna
-  U:
+  "U":
     eng: adjective superlative
     swe: adjective
     est: omadussõna ülivõrre
-  V:
+  "V":
     eng: verb
     swe: verb
     est: tegusõna
-  X:
+  "X":
     eng: particle
     swe: partikel
     est: verbi juurde kuuluv sõna
-  Y:
+  "Y":
     eng: abbreviation
     swe: abbr
     est: lühend
-  Z:
+  "Z":
     eng: punctuation
     swe: interpunktion
     est: kirjavahemärk
