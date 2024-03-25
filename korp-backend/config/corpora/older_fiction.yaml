@@ -15,12 +15,16 @@ mode:
 
 pos_attributes:
   - baseform: lemma
-  - pos: epos
+  - pos: eepos
   - msd: msd
 
 struct_attributes:
+  - doc_genre: genre
+  - doc_original_author: author
   - doc_title: title
   - doc_year: year
+  - doc_publisher: publisher
+  - doc_isbn: isbn
   - doc_date: date
 
     
