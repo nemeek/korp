@@ -5,9 +5,9 @@ context:
       est: 1 lõik
     value: 1 paragraph
 description:
-  swe: 'Skönlitteratur'
-  eng: 'Fiction'
-  est: 'Vanem ilukirjandus'
+  swe: Moderna
+  eng: Modern
+  est: Veebikorpus
 id: older_fiction
 mode:
   - name: default
@@ -19,8 +19,12 @@ pos_attributes:
   - msd: msd
 
 struct_attributes:
-#  - doc_title: title
+  - doc_genre: genre
+  - doc_original_author: author
+  - doc_title: title
   - doc_year: year
+  - doc_publisher: publisher
+  - doc_isbn: isbn
   - doc_date: date
 
     
