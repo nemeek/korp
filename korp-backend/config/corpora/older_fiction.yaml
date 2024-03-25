@@ -7,7 +7,7 @@ context:
 description:
   swe: Moderna
   eng: Modern
-  est: Veebikorpus
+  est: EKI veebikorpuse 2023 vanema ilukirjanduse osa
 id: older_fiction
 mode:
   - name: default
