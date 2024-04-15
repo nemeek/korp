@@ -16,7 +16,7 @@ mode:
 pos_attributes:
   - baseform: lemma
   - pos: udpos
-  # - msd: ufeats
+  - msd: ufeats
 
 struct_attributes:
   - speech_id: id
@@ -26,9 +26,9 @@ struct_attributes:
   # - speech_meeting: meeting
   # - speech_sitting: sitting
   # - speech_agenda: agenda
-  # - speech_title: title
+  - speech_title: title
   # - speech_speaker_role: speaker_role
-  # - speech_speaker_name: author
+  - speech_speaker_name: author
   # - speech_speaker_mp: speaker_mp
   # - speech_speaker_minister: speaker_minister
   # - speech_speaker_party_name: party_name

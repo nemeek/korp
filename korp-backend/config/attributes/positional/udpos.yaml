@@ -27,58 +27,58 @@ opts:
   is_not: '!='
 order: 0
 translation:
-  ADJ:
-    eng: adjective
-    swe: adjektiv
-    est: omadussõna
-  ADV:
-    eng: adverb
-    swe: adverb
-    est: määrsõna
-  PROPN:
-    eng: proper noun
-    swe: egennamn
-    est: pärisnimi
-  INTJ:
-    eng: interjection
-    swe: interjektion
-    est: hüüdsõna
-  CCONJ:
-    eng: conjunction
-    swe: konjunktion
-    est: koordineeriv sidend
-  SCONJ:
-    eng: conjunction
-    swe: konjunktion
-    est: alistav sidend
-  ADP:
-    eng: adposition
-    swe: adposition
-    est: kaassõna
-  NUM:
-    eng: number
-    swe: nummer
-    est: arvsõna
-  PRON:
-    eng: pronoun
-    swe: pronomen
-    est: asesõna
-  X:
-    eng: foreign word
-    swe: utländskt ord
-    est: tundmatu
-  NOUN:
-    eng: noun
-    swe: substantiv
-    est: nimisõna
-  VERB:
-    eng: verb
-    swe: verb
-    est: tegusõna
-  PUNCT:
-    eng: punctuation
-    swe: interpunktion
-    est: kirjavahemärk
+  # ADJ:
+  #   eng: adjective
+  #   swe: adjektiv
+  #   est: omadussõna
+  # ADV:
+  #   eng: adverb
+  #   swe: adverb
+  #   est: määrsõna
+  # PROPN:
+  #   eng: proper noun
+  #   swe: egennamn
+  #   est: pärisnimi
+  # INTJ:
+  #   eng: interjection
+  #   swe: interjektion
+  #   est: hüüdsõna
+  # CCONJ:
+  #   eng: conjunction
+  #   swe: konjunktion
+  #   est: koordineeriv sidend
+  # SCONJ:
+  #   eng: conjunction
+  #   swe: konjunktion
+  #   est: alistav sidend
+  # ADP:
+  #   eng: adposition
+  #   swe: adposition
+  #   est: kaassõna
+  # NUM:
+  #   eng: number
+  #   swe: nummer
+  #   est: arvsõna
+  # PRON:
+  #   eng: pronoun
+  #   swe: pronomen
+  #   est: asesõna
+  # X:
+  #   eng: foreign word
+  #   swe: utländskt ord
+  #   est: tundmatu
+  # NOUN:
+  #   eng: noun
+  #   swe: substantiv
+  #   est: nimisõna
+  # VERB:
+  #   eng: verb
+  #   swe: verb
+  #   est: tegusõna
+  # PUNCT:
+  #   eng: punctuation
+  #   swe: interpunktion
+  #   est: kirjavahemärk
   pos_ADJ:
     eng: adjective
     swe: adjektiv
