@@ -16,7 +16,7 @@ mode:
 pos_attributes:
   - baseform: lemma
   - pos: udpos
-  # - msd: ufeats
+  - msd: msd
 
 struct_attributes:
   - speech_id: id
