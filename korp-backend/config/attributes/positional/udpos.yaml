@@ -79,3 +79,55 @@ translation:
     eng: punctuation
     swe: interpunktion
     est: kirjavahemärk
+  pos_ADJ:
+    eng: adjective
+    swe: adjektiv
+    est: omadussõna
+  pos_ADV:
+    eng: adverb
+    swe: adverb
+    est: määrsõna
+  pos_PROPN:
+    eng: proper noun
+    swe: egennamn
+    est: pärisnimi
+  pos_INTJ:
+    eng: interjection
+    swe: interjektion
+    est: hüüdsõna
+  pos_CCONJ:
+    eng: conjunction
+    swe: konjunktion
+    est: koordineeriv sidend
+  pos_SCONJ:
+    eng: conjunction
+    swe: konjunktion
+    est: alistav sidend
+  pos_ADP:
+    eng: adposition
+    swe: adposition
+    est: kaassõna
+  pos_NUM:
+    eng: number
+    swe: nummer
+    est: arvsõna
+  pos_PRON:
+    eng: pronoun
+    swe: pronomen
+    est: asesõna
+  pos_X:
+    eng: foreign word
+    swe: utländskt ord
+    est: tundmatu
+  pos_NOUN:
+    eng: noun
+    swe: substantiv
+    est: nimisõna
+  pos_VERB:
+    eng: verb
+    swe: verb
+    est: tegusõna
+  pos_PUNCT:
+    eng: punctuation
+    swe: interpunktion
+    est: kirjavahemärk

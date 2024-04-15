@@ -15,7 +15,7 @@ mode:
 
 pos_attributes:
   - baseform: lemma
-  #- pos: udpos
+  - pos: udpos
   # - msd: ufeats
 
 struct_attributes:
