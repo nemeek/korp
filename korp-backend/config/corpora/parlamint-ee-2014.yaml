@@ -43,9 +43,9 @@ title:
   swe: ParlaMint
   eng: ParlaMint
   est: ParlaMint
-# within:
-#   - label:
-#       eng: sentence
-#       swe: mening
-#       est: lause
-#     value: sentence
+within:
+  - label:
+      eng: sentence
+      swe: mening
+      est: lause
+    value: sentence
