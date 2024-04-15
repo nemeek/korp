@@ -15,8 +15,8 @@ mode:
 
 pos_attributes:
   - baseform: lemma
-  - pos: upos
-  - msd: msd
+  - pos: udpos
+  - msd: ufeats
 
 struct_attributes:
   - speech_id: id
@@ -35,7 +35,7 @@ struct_attributes:
   # - speech_party_status: party_status
   # - speech_party_orientation: party_orientation
   # - speech_speaker_gender: gender
-  - speech_speaker_birth: date
+  # - speech_speaker_birth: date
   - speech_date: date
     
 
