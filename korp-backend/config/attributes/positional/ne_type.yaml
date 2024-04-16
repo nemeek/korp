@@ -37,10 +37,14 @@ translation:
     eng: organization name
     swe: organisationsnamn
     est: asutus
-  PRS:
+  PER:
     eng: person name
     swe: personnamm
     est: isik
+  # PRS:
+  #   eng: person name
+  #   swe: personnamm
+  #   est: isik
   TME:
     eng: time
     swe: tid
