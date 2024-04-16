@@ -24,7 +24,7 @@ pos_attributes:
   - name_type: ne_type
   - ref: ref
   - dephead: dephead
-  - deprel: deprel
+  - deprel: udeprel
 
 struct_attributes:
   # - name_type: name_type
