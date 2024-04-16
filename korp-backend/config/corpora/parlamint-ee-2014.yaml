@@ -4,6 +4,10 @@ context:
       swe: 1 paragraph
       est: 1 lõik
     value: 1 paragraph
+  - label:
+      eng: 1 sentence
+      swe: 1 mening
+    value: 1 sentence
 description:
   swe: ParlaMint 2014
   eng: ParlaMint 2014
@@ -17,9 +21,10 @@ pos_attributes:
   - baseform: lemma
   - pos: udpos
   - msd: msd
+  - name_type: ne_type
 
 struct_attributes:
-  - name_type: name_type
+  # - name_type: name_type
   - speech_id: id
   - speech_subcorpus: subcorpus
   - speech_term: term

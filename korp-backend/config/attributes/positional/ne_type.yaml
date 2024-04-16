@@ -1,0 +1,52 @@
+dataset:
+  - LOC
+  - PRS
+  - ORG
+  - EVN
+  - WRK
+  - OBJ
+  - MSR
+  - TME
+extended_component: datasetSelect
+opts:
+  is: "="
+  is_not: "!="
+is_struct_attr: true
+label:
+  eng: name type
+  swe: namntyp
+  est: nimetüüp
+translation:
+  EVN:
+    eng: event name
+    swe: händelsenamn
+    est: sündmus
+  LOC:
+    eng: location name
+    swe: platsnamn
+    est: koht
+  MSR:
+    eng: measure name
+    swe: måttnamn
+    est: mõõt
+  OBJ:
+    eng: object name
+    swe: objektnamn
+    est: objekt
+  ORG:
+    eng: organization name
+    swe: organisationsnamn
+    est: asutus
+  PRS:
+    eng: person name
+    swe: personnamm
+    est: isik
+  TME:
+    eng: time
+    swe: tid
+    est: aeg
+  WRK:
+    eng: work or art name
+    swe: verks- eller konstnamn
+    est: töö või kunst
+    
