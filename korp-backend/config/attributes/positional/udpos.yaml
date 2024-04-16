@@ -131,3 +131,13 @@ translation:
     eng: punctuation
     swe: interpunktion
     est: kirjavahemärk
+  pos_AUX:
+    eng: auxiliary verb
+    est: abiverb
+  pos_DET:
+    eng: determiner
+    est: artikkel
+  pos_SYM:
+    eng: symbol
+    est: sümbol
+    
