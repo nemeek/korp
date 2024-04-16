@@ -22,6 +22,9 @@ pos_attributes:
   - pos: udpos
   - msd: msd
   - name_type: ne_type
+  - ref: ref
+  - dephead: dephead
+  - deprel: deprel
 
 struct_attributes:
   # - name_type: name_type
