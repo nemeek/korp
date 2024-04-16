@@ -2,4 +2,23 @@ label:
   eng: gender
   est: sugu
   
-  
+extended_component: datasetSelect
+
+dataset:
+  M: gender_M
+  F: gender_F
+
+translation:
+  gender_M:
+    eng: male
+    est: mees
+  gender_F:
+    eng: female
+    est: naine
+  M:
+    eng: male
+    est: mees
+  F:
+    eng: female
+    est: naine
+    
