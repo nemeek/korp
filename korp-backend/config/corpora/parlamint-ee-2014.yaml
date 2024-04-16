@@ -20,22 +20,22 @@ pos_attributes:
 
 struct_attributes:
   - speech_id: id
-  # - speech_subcorpus: subcorpus
-  # - speech_term: term
-  # - speech_session: session
-  # - speech_meeting: meeting
-  # - speech_sitting: sitting
-  # - speech_agenda: agenda
+  - speech_subcorpus: subcorpus
+  - speech_term: term
+  - speech_session: session
+  - speech_meeting: meeting
+  - speech_sitting: sitting
+  - speech_agenda: agenda
   - speech_title: title
-  # - speech_speaker_role: speaker_role
-  - speech_speaker_name: author
-  # - speech_speaker_mp: speaker_mp
-  # - speech_speaker_minister: speaker_minister
-  # - speech_speaker_party_name: party_name
-  # - speech_party_status: party_status
-  # - speech_party_orientation: party_orientation
-  # - speech_speaker_gender: gender
-  # - speech_speaker_birth: date
+  - speech_speaker_role: speaker_role
+  - speech_speaker_name: speaker_name
+  - speech_speaker_mp: speaker_mp
+  - speech_speaker_minister: speaker_minister
+  - speech_speaker_party_name: ee_party_name
+  - speech_party_status: party_status
+  - speech_party_orientation: party_orientation
+  - speech_speaker_gender: gender
+  - speech_speaker_birth: speaker_year
   # - speech_date: date
     
 

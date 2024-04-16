@@ -1,0 +1,8 @@
+label:
+  eng: speaker name
+  swe: författare
+  est: kõneleja
+extended_component: structServiceAutocomplete
+opts:
+  is: '='
+  is_not: '!='
