@@ -19,6 +19,7 @@ pos_attributes:
   - msd: msd
 
 struct_attributes:
+  - name_type: type
   - speech_id: id
   - speech_subcorpus: subcorpus
   - speech_term: term
