@@ -1,6 +1,7 @@
 dataset:
   - LOC
-  - PRS
+  # - PRS
+  - PER
   - ORG
   - EVN
   - WRK
