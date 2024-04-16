@@ -48,4 +48,4 @@ within:
       eng: sentence
       swe: mening
       est: lause
-    value: sentence
+    value: 1 sentence
