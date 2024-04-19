@@ -1,0 +1,57 @@
+context:
+  - label:
+      eng: 1 paragraph
+      swe: 1 paragraph
+      est: 1 lõik
+    value: 1 paragraph
+  - label:
+      eng: 1 sentence
+      swe: 1 mening
+    value: 1 sentence
+description:
+  swe: ParlaMint 2018
+  eng: ParlaMint 2018
+  est: ParlaMint 2018
+id: parlamint-ee_2018-10-11
+mode:
+  - name: parlamint
+
+
+pos_attributes:
+  - baseform: lemma
+  - pos: udpos
+  - msd: msd
+  - name_type: ne_type
+
+struct_attributes:
+  # - name_type: name_type
+  - speech_id: id
+  - speech_subcorpus: subcorpus
+  - speech_term: term
+  - speech_session: session
+  - speech_meeting: meeting
+  - speech_sitting: sitting
+  - speech_agenda: agenda
+  - speech_title: title
+  - speech_speaker_role: speaker_role
+  - speech_speaker_name: speaker_name
+  - speech_speaker_mp: speaker_mp
+  - speech_speaker_minister: speaker_minister
+  - speech_speaker_party_name: ee_party_name
+  - speech_party_status: party_status
+  - speech_party_orientation: party_orientation
+  - speech_speaker_gender: gender
+  - speech_speaker_birth: speaker_year
+  # - speech_date: date
+    
+
+title:
+  swe: ParlaMint
+  eng: ParlaMint
+  est: ParlaMint
+within:
+  - label:
+      eng: sentence
+      swe: mening
+      est: lause
+    value: sentence
