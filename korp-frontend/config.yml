@@ -40,10 +40,10 @@ news_desk_url: 'https://svn.spraakdata.gu.se/sb-arkiv/pub/component_news/json/ko
 
 word_picture_tagset:
     # supported pos-tags
-    verb: VERB
-    noun: NOUN
-    adjective: ADJ
-    adverb: ADV
+    verb: verb
+    noun: noun
+    adjective: adj
+    adverb: adv
     # preposition: pp
 
     # dependency releations
