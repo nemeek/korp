@@ -84,14 +84,14 @@ word_picture_conf:
         field_reverse: true
         # alt_label: vb
       - _
-  adjective:
-    - - _
-      - rel: pre_modifier
-        css_class: color_yellow
-        field_reverse: true
-    - - rel: adverbial2
-        css_class: color_purple
-      - _
+  # adjective:
+  #   - - _
+  #     - rel: pre_modifier
+  #       css_class: color_yellow
+  #       field_reverse: true
+  #   - - rel: adverbial2
+  #       css_class: color_purple
+  #     - _
   adverb:
     - - _
       - rel: adverbial
