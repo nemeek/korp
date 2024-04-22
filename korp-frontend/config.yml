@@ -40,20 +40,21 @@ news_desk_url: 'https://svn.spraakdata.gu.se/sb-arkiv/pub/component_news/json/ko
 
 word_picture_tagset:
     # supported pos-tags
-    verb: vb
-    noun: nn
-    adjective: jj
-    adverb: ab
-    preposition: pp
+    verb: VERB
+    noun: NOUN
+    adjective: ADJ
+    adverb: ADV
+    # preposition: pp
 
     # dependency releations
-    subject: ss
+    subject: nsubj
     object: obj
-    adverbial: adv
-    preposition_rel: pa
-    pre_modifier: at
-    post_modifier: et
-    adverbial2: aa
+    # adverbial: adv
+    adverbial: advcl
+    # preposition_rel: pa
+    # pre_modifier: at
+    # post_modifier: et
+    # adverbial2: aa
 
 word_picture_conf:
   verb:
