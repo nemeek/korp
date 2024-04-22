@@ -10,8 +10,8 @@ context:
     value: 1 sentence
 description:
   swe: ParlaMint 2014
-  eng: ParlaMint 2014
-  est: ParlaMint 2014
+  eng: ParlaMint 2014 sample
+  est: ParlaMint 2014 näidis
 id: parlamint-ee_2014-12-02
 mode:
   - name: parlamint
@@ -49,9 +49,9 @@ struct_attributes:
     
 
 title:
-  swe: ParlaMint
-  eng: ParlaMint
-  est: ParlaMint
+  swe: ParlaMint 2014
+  eng: ParlaMint 2014
+  est: ParlaMint 2014
 within:
   - label:
       eng: sentence

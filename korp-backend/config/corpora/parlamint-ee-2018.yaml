@@ -10,8 +10,8 @@ context:
     value: 1 sentence
 description:
   swe: ParlaMint 2018
-  eng: ParlaMint 2018
-  est: ParlaMint 2018
+  eng: ParlaMint 2018 sample
+  est: ParlaMint 2018 näidis
 id: parlamint-ee_2018-10-11
 mode:
   - name: parlamint
@@ -22,6 +22,9 @@ pos_attributes:
   - pos: udpos
   - msd: msd
   - name_type: ne_type
+  - ref: ref
+  - dephead: dephead
+  - deprel: udeprel
 
 struct_attributes:
   # - name_type: name_type
@@ -46,9 +49,9 @@ struct_attributes:
     
 
 title:
-  swe: ParlaMint
-  eng: ParlaMint
-  est: ParlaMint
+  swe: ParlaMint 2018
+  eng: ParlaMint 2018
+  est: ParlaMint 2018
 within:
   - label:
       eng: sentence
