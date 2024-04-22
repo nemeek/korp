@@ -66,23 +66,23 @@ word_picture_conf:
       - rel: adverbial
         css_class: color_green
   noun:
-    - - rel: preposition_rel
-        css_class: color_yellow
-        field_reverse: true
-      - rel: pre_modifier
-        css_class: color_azure
-      - _
-      - rel: post_modifier
-        css_class: color_red
+    # - - rel: preposition_rel
+    #     css_class: color_yellow
+    #     field_reverse: true
+    #   - rel: pre_modifier
+    #     css_class: color_azure
+    #   - _
+    #   - rel: post_modifier
+    #     css_class: color_red
     - - _
       - rel: subject
         css_class: color_blue
         field_reverse: true
-        alt_label: vb
+        # alt_label: vb
     - - rel: object
         css_class: color_purple
         field_reverse: true
-        alt_label: vb
+        # alt_label: vb
       - _
   adjective:
     - - _
@@ -97,14 +97,14 @@ word_picture_conf:
       - rel: adverbial
         css_class: color_yellow
         field_reverse: true
-    - - _
-      - rel: adverbial2
-        css_class: color_purple
-        field_reverse: true
-  preposition:
-    - - _
-      - rel: preposition_rel
-        css_class: color_green
+  #   - - _
+  #     - rel: adverbial2
+  #       css_class: color_purple
+  #       field_reverse: true
+  # preposition:
+  #   - - _
+  #     - rel: preposition_rel
+  #       css_class: color_green
 
 default_overview_context: 1 sentence
 default_reading_context: 1 paragraph
