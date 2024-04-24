@@ -21,6 +21,8 @@ services:
     ports:
       - "8000:80"
     restart: always
+    volumes:
+      - /srv/abikorp:/usr/share/nginx/html
 
   frontend:
     build: ./korp-frontend
