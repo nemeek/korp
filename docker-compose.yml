@@ -22,7 +22,7 @@ services:
       - "8000:80"
     restart: always
     volumes:
-      - /srv/abikorp:/usr/share/nginx/html
+      - /srv/korpiabi/build/html:/usr/share/nginx/html
 
   frontend:
     build: ./korp-frontend
