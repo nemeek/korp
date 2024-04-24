@@ -12,8 +12,9 @@ ARG GITCACHE
 # clone INTO /app/korp-frontend (This makes directory /app/ too)
 
 RUN git clone https://github.com/nemeek/korp-frontend.git /app/korp-frontend \
-	&& cd /app/korp-frontend && yarn
-## && git checkout master \
+ && git checkout master \
+    && cd /app/korp-frontend && yarn
+
 
 
 COPY config.yml /app/korp-frontend/app/.
