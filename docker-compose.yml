@@ -16,10 +16,10 @@ services:
     networks:
       - korp
 
-  sphinx:
-    build: ./sphinx-server
+  abi:
+    image: nginx
     ports:
-      - "8000:8000"
+      - "8000:80"
     restart: always
 
   frontend:
