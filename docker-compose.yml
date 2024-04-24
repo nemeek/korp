@@ -16,6 +16,12 @@ services:
     networks:
       - korp
 
+  sphinx:
+    build: ./sphinx-server
+    ports:
+      - "8000:8000"
+    restart: always
+
   frontend:
     build: ./korp-frontend
     # expose:
