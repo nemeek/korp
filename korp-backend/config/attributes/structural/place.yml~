@@ -1,8 +1,0 @@
-label:
-  eng: author
-  swe: författare
-  est: saatja
-extended_component: structServiceAutocomplete
-opts:
-  is: '='
-  is_not: '!='
