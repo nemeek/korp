@@ -15,8 +15,6 @@ RUN git clone https://github.com/nemeek/korp-frontend.git /app/korp-frontend \
  && cd /app/korp-frontend && git checkout master \
     && cd /app/korp-frontend && yarn
 
-
-
 COPY config.yml /app/korp-frontend/app/.
 COPY index.html /app/korp-frontend/app/.
 
@@ -26,7 +24,4 @@ RUN yarn build
 EXPOSE 9111
 
 WORKDIR /app/korp-frontend/dist
-# COPY index.html /app/korp-frontend/dist/.
-# WORKDIR /app/korp-frontend/app
 CMD	python -m http.server 9111
-# CMD yarn start:dist
