@@ -1,0 +1,40 @@
+ARG GITCACHE=0
+
+# For korp-backend
+FROM  python:3.8
+
+LABEL maintainer="neeme.kahusk@gmail.com"
+
+
+RUN apt-get update && apt-get install subversion git default-libmysqlclient-dev -y
+
+# install cwb
+RUN svn co http://svn.code.sf.net/p/cwb/code/cwb/trunk cwb && cd cwb && ./install-scripts/install-linux
+
+ARG GITCACHE
+# clone korp-backend and create /app/korp-backend
+RUN git clone https://github.com/nemeek/korp-backend.git /app/korp-backend \
+	&& cd /app/korp-backend \
+#	 && git checkout  master
+COPY requirements.txt /app/korp-backend
+WORKDIR /app/korp-backend
+RUN pip3 install -r requirements.txt
+RUN pip3 install gunicorn
+COPY config.py /app/korp-backend/.
+
+RUN mkdir -p /app/korp-backend/config/corpora
+RUN mkdir -p /app/korp-backend/config/modes
+RUN mkdir -p /app/korp-backend/config/attributes/positional
+RUN mkdir -p /app/korp-backend/config/attributes/structural
+
+COPY ./config/corpora /app/korp-backend/config/corpora/
+COPY ./config/modes /app/korp-backend/config/modes/
+COPY ./config/attributes/positional /app/korp-backend/config/attributes/positional
+COPY ./config/attributes/structural /app/korp-backend/config/attributes/structural
+
+
+EXPOSE 1234
+
+WORKDIR /app/korp-backend/
+
+CMD gunicorn --worker-class gevent --bind 0.0.0.0:1234 --workers 4 --max-requests 250 --limit-request-line 0 'run:create_app()'

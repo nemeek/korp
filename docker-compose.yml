@@ -1,0 +1,50 @@
+version: '3.7'
+services:
+  db:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: korp
+      MYSQL_USER: korpikasutaja
+      MYSQL_PASSWORD: korpiparool
+      MYSQL_TCP_PORT: 3307
+    expose:
+      - '3307'
+    volumes: 
+      - /srv/mysql:/docker-entrypoint-initdb.d
+    networks:
+      - korp
+
+  abi:
+    image: nginx
+    ports:
+      - "8000:80"
+    restart: always
+    volumes:
+      - /srv/korpiabi/build/html:/usr/share/nginx/html
+
+  frontend:
+    build: ./korp-frontend
+    ports:
+      - "9111:9111"
+    restart: always
+    networks:
+      - korp
+      
+  backend:
+    environment:
+      - PYTHONUNBUFFERED=1 # otherwise docker-compose up won't show logs from this service
+    build: ./korp-backend
+    ports:
+      - "1234:1234"
+    restart: on-failure
+    volumes:
+      - /srv/vert:/corpora
+    networks:
+      - korp
+
+networks:
+  korp:
+    driver: bridge
+
