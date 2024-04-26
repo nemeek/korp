@@ -1,0 +1,41 @@
+context:
+  - label:
+      eng: 1 paragraph
+      swe: 1 paragraph
+      est: 1 lõik
+    value: 1 paragraph
+description:
+  swe: Moderna
+  eng: Modern
+  est: EKI veebikorpuse 2023 vanema ilukirjanduse osa
+id: older_fiction
+mode:
+  - name: default
+
+
+pos_attributes:
+  - baseform: lemma
+  - pos: eepos
+  - msd: msd
+
+struct_attributes:
+  - doc_genre: genre
+  - doc_original_author: author
+  - doc_title: title
+  - doc_year: year
+  - doc_publisher: publisher
+  - doc_isbn: isbn
+  - doc_date: date
+
+    
+
+title:
+  swe: 'Skönlitteratur'
+  eng: 'Fiction'
+  est: 'Vanem ilukirjandus'
+within:
+  - label:
+      eng: sentence
+      swe: mening
+      est: lause
+    value: sentence

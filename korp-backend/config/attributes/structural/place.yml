@@ -1,0 +1,8 @@
+label:
+  eng: place
+  swe: place
+  est: koht
+extended_component: structServiceAutocomplete
+opts:
+  is: '='
+  is_not: '!='

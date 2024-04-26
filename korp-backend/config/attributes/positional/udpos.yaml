@@ -1,0 +1,143 @@
+dataset:
+  ADJ: pos_ADJ
+  ADP: pos_ADP
+  ADV: pos_ADV
+  AUX: pos_AUX
+  CCONJ: pos_CCONJ
+  DET: pos_DET
+  INTJ: pos_INTJ
+  NOUN: pos_NOUN
+  NUM: pos_NUM
+  PRON: pos_PRON
+  PROPN: pos_PROPN
+  PUNCT: pos_PUNCT
+  SCONJ: pos_SCONJ
+  SYM: pos_SYM
+  VERB: pos_VERB
+  X: pos_X
+  
+escape: false
+extended_component: datasetSelect
+label:
+  eng: part-of-speech
+  swe: ordklass
+  est: sõnaliik
+opts:
+  is: '='
+  is_not: '!='
+order: 0
+translation:
+  # ADJ:
+  #   eng: adjective
+  #   swe: adjektiv
+  #   est: omadussõna
+  # ADV:
+  #   eng: adverb
+  #   swe: adverb
+  #   est: määrsõna
+  # PROPN:
+  #   eng: proper noun
+  #   swe: egennamn
+  #   est: pärisnimi
+  # INTJ:
+  #   eng: interjection
+  #   swe: interjektion
+  #   est: hüüdsõna
+  # CCONJ:
+  #   eng: conjunction
+  #   swe: konjunktion
+  #   est: koordineeriv sidend
+  # SCONJ:
+  #   eng: conjunction
+  #   swe: konjunktion
+  #   est: alistav sidend
+  # ADP:
+  #   eng: adposition
+  #   swe: adposition
+  #   est: kaassõna
+  # NUM:
+  #   eng: number
+  #   swe: nummer
+  #   est: arvsõna
+  # PRON:
+  #   eng: pronoun
+  #   swe: pronomen
+  #   est: asesõna
+  # X:
+  #   eng: foreign word
+  #   swe: utländskt ord
+  #   est: tundmatu
+  # NOUN:
+  #   eng: noun
+  #   swe: substantiv
+  #   est: nimisõna
+  # VERB:
+  #   eng: verb
+  #   swe: verb
+  #   est: tegusõna
+  # PUNCT:
+  #   eng: punctuation
+  #   swe: interpunktion
+  #   est: kirjavahemärk
+  pos_ADJ:
+    eng: adjective
+    swe: adjektiv
+    est: omadussõna
+  pos_ADV:
+    eng: adverb
+    swe: adverb
+    est: määrsõna
+  pos_PROPN:
+    eng: proper noun
+    swe: egennamn
+    est: pärisnimi
+  pos_INTJ:
+    eng: interjection
+    swe: interjektion
+    est: hüüdsõna
+  pos_CCONJ:
+    eng: conjunction
+    swe: konjunktion
+    est: koordineeriv sidend
+  pos_SCONJ:
+    eng: conjunction
+    swe: konjunktion
+    est: alistav sidend
+  pos_ADP:
+    eng: adposition
+    swe: adposition
+    est: kaassõna
+  pos_NUM:
+    eng: number
+    swe: nummer
+    est: arvsõna
+  pos_PRON:
+    eng: pronoun
+    swe: pronomen
+    est: asesõna
+  pos_X:
+    eng: foreign word
+    swe: utländskt ord
+    est: tundmatu
+  pos_NOUN:
+    eng: noun
+    swe: substantiv
+    est: nimisõna
+  pos_VERB:
+    eng: verb
+    swe: verb
+    est: tegusõna
+  pos_PUNCT:
+    eng: punctuation
+    swe: interpunktion
+    est: kirjavahemärk
+  pos_AUX:
+    eng: auxiliary verb
+    est: abiverb
+  pos_DET:
+    eng: determiner
+    est: artikkel
+  pos_SYM:
+    eng: symbol
+    est: sümbol
+    

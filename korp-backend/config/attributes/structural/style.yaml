@@ -1,0 +1,28 @@
+is_struct_attr: true
+
+dataset:
+  "0" : "0"
+  "1" : "1"
+
+extended_component: datasetSelect
+  
+label:
+  eng: style
+  est: stiil
+
+opts:
+  is: '='
+  is_not: '!='
+
+order: 3
+
+translation:
+  "0":
+    eng: 'plain text'
+    est: tavatekst
+
+  "1":
+    eng: heading
+    est: pealkiri
+
+    

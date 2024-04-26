@@ -1,0 +1,184 @@
+dataset:
+  A: pos_A
+  B: pos_B
+  C: pos_C
+  D: pos_D
+  G: pos_G
+  H: pos_H
+  I: pos_I
+  J: pos_J
+  K: pos_K
+  N: pos_N
+  O: pos_O
+  P: pos_P
+  Q: pos_Q
+  S: pos_S
+  U: pos_U
+  V: pos_V
+  X: pos_X
+  Y: pos_Y
+  Z: pos_Z
+
+escape: false
+extended_component: datasetSelect
+label:
+  eng: part-of-speech
+  swe: ordklass
+  est: sõnaliik
+opts:
+  is: '='
+  is_not: '!='
+order: 0
+translation:
+  A:
+    eng: adjective
+    swe: adjektiv
+    est: omadussõna algvõrre
+  B:
+    eng: sentence particle
+    swe: partikel
+    est: lausepartikkel
+  C:
+    eng: adjective comparative
+    swe: adjektiv
+    est: omadussõna keskvõrre
+  D:
+    eng: adverb
+    swe: adverb
+    est: määrsõna
+  G:
+    eng: genitive attribute
+    swe: genitive
+    est: genitiivatribuut
+  H:
+    eng: proper noun
+    swe: egennamn
+    est: pärisnimi
+  I:
+    eng: interjection
+    swe: interjektion
+    est: hüüdsõna
+  J:
+    eng: conjunction
+    swe: konjunktion
+    est: sidesõna
+  K:
+    eng: adposition
+    swe: adposition
+    est: kaassõna
+  N:
+    eng: cardinal number
+    swe: grundtal
+    est: põhiarvsõna
+  O:
+    eng: ordinal number
+    swe: ordningstal
+    est: järgarvsõna
+  P:
+    eng: pronoun
+    swe: pronomen
+    est: asesõna
+  Q:
+    eng: foreign word
+    swe: utländskt ord
+    est: tundmatu
+  S:
+    eng: noun
+    swe: substantiv
+    est: nimisõna
+  U:
+    eng: adjective superlative
+    swe: adjective
+    est: omadussõna ülivõrre
+  V:
+    eng: verb
+    swe: verb
+    est: tegusõna
+  X:
+    eng: particle
+    swe: partikel
+    est: verbi juurde kuuluv sõna
+  Y:
+    eng: abbreviation
+    swe: abbr
+    est: lühend
+  Z:
+    eng: punctuation
+    swe: interpunktion
+    est: kirjavahemärk
+  pos_A:
+    eng: adjective
+    swe: adjektiv
+    est: omadussõna algvõrre
+  pos_B:
+    eng: sentence particle
+    swe: partikel
+    est: lausepartikkel
+  pos_C:
+    eng: adjective comparative
+    swe: adjektiv
+    est: omadussõna keskvõrre
+  pos_D:
+    eng: adverb
+    swe: adverb
+    est: määrsõna
+  pos_G:
+    eng: genitive attribute
+    swe: genitive
+    est: genitiivatribuut
+  pos_H:
+    eng: proper noun
+    swe: egennamn
+    est: pärisnimi
+  pos_I:
+    eng: interjection
+    swe: interjektion
+    est: hüüdsõna
+  pos_J:
+    eng: conjunction
+    swe: konjunktion
+    est: sidesõna
+  pos_K:
+    eng: adposition
+    swe: adposition
+    est: kaassõna
+  pos_N:
+    eng: cardinal number
+    swe: grundtal
+    est: põhiarvsõna
+  pos_O:
+    eng: ordinal number
+    swe: ordningstal
+    est: järgarvsõna
+  pos_P:
+    eng: pronoun
+    swe: pronomen
+    est: asesõna
+  pos_Q:
+    eng: foreign word
+    swe: utländskt ord
+    est: tundmatu
+  pos_S:
+    eng: noun
+    swe: substantiv
+    est: nimisõna
+  pos_U:
+    eng: adjective superlative
+    swe: adjective
+    est: omadussõna ülivõrre
+  pos_V:
+    eng: verb
+    swe: verb
+    est: tegusõna
+  pos_X:
+    eng: particle
+    swe: partikel
+    est: verbi juurde kuuluv sõna
+  pos_Y:
+    eng: abbreviation
+    swe: abbr
+    est: lühend
+  pos_Z:
+    eng: punctuation
+    swe: interpunktion
+    est: kirjavahemärk

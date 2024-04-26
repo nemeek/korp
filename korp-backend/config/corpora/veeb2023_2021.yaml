@@ -1,0 +1,44 @@
+context:
+  - label:
+      eng: 1 paragraph
+      swe: 1 paragraph
+      est: 1 lõik
+    value: 1 paragraph
+
+description:
+  swe: Webb 2021
+  eng: Web 2021
+  est: Veeb 2021
+
+id: veeb2023_2021
+
+mode:
+  - folder: veeb
+    name: default
+
+pos_attributes:
+  - baseform: lemma
+  - pos: eepos
+  - msd: msd
+
+struct_attributes:
+  - paragraph_heading: style
+#  - doc_feed_title: title
+  - doc_feed_hostname: hostname
+  - doc_timestamp_year: year
+  - doc_date: date
+  - doc_url: url
+  - doc_genre: genre
+  - doc_topic: topic
+
+title:
+  swe: 'Webb 23 (2021)'
+  eng: 'Web 23 (2021)'
+  est: 'Veeb 2023 (2021)'
+
+within:
+  - label:
+      eng: sentence
+      swe: mening
+      est: lause
+    value: sentence

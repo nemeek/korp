@@ -1,0 +1,23 @@
+dataset:
+  1: 1
+  2: 2
+  3: 3
+escape: false
+extended_component: datasetSelect
+label:
+  eng: person
+  est: isik
+opts:
+  is: '='
+  is_not: '!='
+order: 0
+translation:
+  1:
+    eng: 1st person
+    est: 1. isik
+  2:
+    eng: 2nd person
+    est: 2. isik
+  3:
+    eng: 3rd person
+    est: 3. isik

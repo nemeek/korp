@@ -1,0 +1,67 @@
+dataset:
+  Nom: Nom
+  Gen: Gen
+  Par: Par
+  Ill: Ill
+  Ine: Ine
+  Ela: Ela
+  All: All
+  Ade: Ade
+  Abl: Abl
+  Tra: Tra
+  Trm: Trm
+  Ess: Ess
+  Abe: Abe
+  Com: Com
+escape: false
+extended_component: datasetSelect
+label:
+  eng: case
+  est: kääne
+opts:
+  is: '='
+  is_not: '!='
+order: 0
+translation:
+  Nom:
+    eng: nominative
+    est: nimetav
+  Gen:
+    eng: genitive
+    est: omastav
+  Par:
+    eng: partitive
+    est: osastav
+  Ill:
+    eng: illative
+    est: sisseütlev
+  Ine:
+    eng: inessive
+    est: seesütlev
+  Ela:
+    eng: elative
+    est: seestütlev
+  All:
+    eng: allative
+    est: alaleütlev
+  Ade:
+    eng: alalütlev
+    est: adessive
+  Abl:
+    eng: ablative
+    est: alaltütlev
+  Tra:
+    eng: translative
+    est: saav
+  Trm:
+    eng: terminative
+    est: rajav
+  Ess:
+    eng: essive
+    est: olev
+  Abe:
+    eng: abessive
+    est: ilmaütlev
+  Com:
+    eng: comitative
+    est: kaasaütlev

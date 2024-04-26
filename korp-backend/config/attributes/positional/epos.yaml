@@ -1,0 +1,108 @@
+dataset:
+  _A_: _A_
+  _B_: _B_
+  _C_: _C_
+  _D_: _D_
+  _G_: _G_
+  _H_: _H_
+  _I_: _I_
+  _J_: _J_
+  _K_: _K_
+  _N_: _N_
+  _O_: _O_
+  _P_: _P_
+  _Q_: _Q_
+  _S_: _S_
+  _U_: _U_
+  _V_: _V_
+  _X_: _X_
+  _Y_: _Y_
+  _Z_: _Z_
+
+escape: false
+extended_component: datasetSelect
+label:
+  eng: part-of-speech
+  swe: ordklass
+  est: sõnaliik
+opts:
+  is: '='
+  is_not: '!='
+order: 0
+translation:
+  _A_:
+    eng: adjective
+    swe: adjektiv
+    est: omadussõna algvõrre
+  _B_:
+    eng: sentence particle
+    swe: partikel
+    est: lausepartikkel
+  _C_:
+    eng: adjective comparative
+    swe: adjektiv
+    est: omadussõna keskvõrre
+  _D_:
+    eng: adverb
+    swe: adverb
+    est: määrsõna
+  _G_:
+    eng: genitive attribute
+    swe: genitive
+    est: genitiivatribuut
+  _H_:
+    eng: proper noun
+    swe: egennamn
+    est: pärisnimi
+  _I_:
+    eng: interjection
+    swe: interjektion
+    est: hüüdsõna
+  _J_:
+    eng: conjunction
+    swe: konjunktion
+    est: sidesõna
+  _K_:
+    eng: adposition
+    swe: adposition
+    est: kaassõna
+  _N_:
+    eng: cardinal number
+    swe: grundtal
+    est: põhiarvsõna
+  _O_:
+    eng: ordinal number
+    swe: ordningstal
+    est: järgarvsõna
+  _P_:
+    eng: pronoun
+    swe: pronomen
+    est: asesõna
+  _Q_:
+    eng: foreign word
+    swe: utländskt ord
+    est: tundmatu
+  _S_:
+    eng: noun
+    swe: substantiv
+    est: nimisõna
+  _U_:
+    eng: adjective superlative
+    swe: adjective
+    est: omadussõna ülivõrre
+  _V_:
+    eng: verb
+    swe: verb
+    est: tegusõna
+  _X_:
+    eng: particle
+    swe: partikel
+    est: verbi juurde kuuluv sõna
+  _Y_:
+    eng: abbreviation
+    swe: abbr
+    est: lühend
+  _Z_:
+    eng: punctuation
+    swe: interpunktion
+    est: kirjavahemärk

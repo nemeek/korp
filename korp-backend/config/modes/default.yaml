@@ -1,0 +1,15 @@
+label:
+  swe: Moderna
+  eng: Modern
+  est: Kaasaegsed
+order: 10
+folders:
+  veeb:
+    title:
+      eng: Web
+      swe: Webb
+      est: Veeb
+    description:
+      eng: Web texts
+      swe: Webbtexter
+      est: EKI veebikorpus 2023, ajatemplitega osa

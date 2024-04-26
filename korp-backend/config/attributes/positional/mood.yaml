@@ -1,0 +1,27 @@
+dataset:
+  Ind: Ind
+  Cond: Cond
+  Imprt: Imprt
+  Quot: Quot
+escape: false
+extended_component: datasetSelect
+label:
+  eng: mood
+  est: kõneviis
+opts:
+  is: '='
+  is_not: '!='
+order: 0
+translation:
+  Ind:
+    eng: indicative
+    est: kindel
+  Cond:
+    eng: conditional
+    est: tingiv
+  Imprt:
+    eng: imperative
+    est: käskiv
+  Quot:
+    eng: quotative
+    est: kaudne
