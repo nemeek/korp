@@ -4,9 +4,10 @@ dataset:
   B-ORG: B-ORG
   I-PER: I-PER
   I-LOC: I-LOC
+  I-ORG: I-ORG
 
 escape: false
-extended_component: datasetSelect  I-ORG: I-ORG
+extended_component: datasetSelect  
 is_struct_attr: true
 
 label:
