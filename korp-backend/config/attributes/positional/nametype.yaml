@@ -2,23 +2,44 @@ dataset:
   B-PER: B-PER
   B-LOC: B-LOC
   B-ORG: B-ORG
+  I-PER: I-PER
+  I-LOC: I-LOC
+  I-ORG: I-ORG
   
 
 is_struct_attr: true
 label:
-  eng: type
-  swe: typ
-  est: tüüp
+  eng: nametype
+  swe: namntyp
+  est: nimetüüp
 
 translations:
   B-PER:
-    est: isik
-    eng: person
+    est: isik (algus)
+    eng: person (beginning)
+    swe: person (början)
 
   B-LOC:
-    est: koht
-    eng: place
+    est: koht (algus)
+    eng: place (beginning)
+    swe: plats (början)
 
   B-ORG:
+    est: asutus (algus)
+    eng: organization (beginning)
+    swe: organisation (början)
+
+  I-PER:
+    est: isik
+    eng: person
+    swe: person
+
+  I-LOC:
+    est: koht
+    eng: place
+    swe: plats
+
+  I-ORG:
     est: asutus
     eng: organization
+    swe: organisation
