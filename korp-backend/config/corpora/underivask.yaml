@@ -23,10 +23,10 @@ pos_attributes:
   - nominal: nominal
   - mood: mood
   - person: person
-  - negation: negation
+  - negation: negation'
+  - name_type: nametype    
 
 struct_attributes:
-  - name_type: type
   - text_sender: sender
   - text_recipient: recipient
   - text_place: place
