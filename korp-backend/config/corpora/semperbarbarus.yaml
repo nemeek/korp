@@ -6,6 +6,7 @@ context:
 description:
   swe: Semper Barbarus
   eng: Semper and Barbarus
+  est: 'Semperi ja Barbaruse kirjavahetus'
 id: semperbarbarus
 mode:
   - name: litterary
